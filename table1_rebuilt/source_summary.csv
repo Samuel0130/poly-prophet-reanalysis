@@ -1,0 +1,7 @@
+source,raw_rows,valid_rows,invalid_rows,unique_canonical_polymers,duplicate_valid_rows,Tg_labels_raw,Tg_labeled_unique,FFV_labels_raw,FFV_labeled_unique,Tc_labels_raw,Tc_labeled_unique,Density_labels_raw,Density_labeled_unique,Rg_labels_raw,Rg_labeled_unique
+train,7973,7973,0,7973,0,511,511,7030,7030,737,737,613,613,614,614
+dataset1,874,874,0,866,8,0,0,0,0,874,866,0,0,0,0
+dataset2,7208,7208,0,7174,34,0,0,0,0,0,0,0,0,0,0
+dataset3,46,46,0,46,0,46,46,0,0,0,0,0,0,0,0
+dataset4,862,862,0,862,0,0,0,862,862,0,0,0,0,0,0
+test,3,3,0,3,0,0,0,0,0,0,0,0,0,0,0

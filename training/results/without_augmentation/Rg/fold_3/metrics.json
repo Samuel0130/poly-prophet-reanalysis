@@ -1,0 +1,11 @@
+{
+  "variant": "without_augmentation",
+  "target": "Rg",
+  "fold": 3,
+  "n_test": 123,
+  "n_train": 491,
+  "selected_epochs": 45,
+  "mae": 1.3008241604631128,
+  "rmse": 1.7705355347371627,
+  "r2": 0.8387976273132545
+}

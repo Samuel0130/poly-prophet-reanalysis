@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "neurips-open-polymer-prediction",
+    "version": "1",
+    "status": "unavailable",
+    "errorType": "HTTPError"
+  },
+  {
+    "slug": "cnnlstm-bamod4c",
+    "version": "",
+    "status": "downloaded",
+    "metadata": {
+      "id": 91259053,
+      "ref": "bfladderbean/cnnlstm-bamod4c",
+      "title": "cnnlstm+bamod4c",
+      "author": "BFladderbean",
+      "slug": "cnnlstm-bamod4c",
+      "lastRunTime": "2026-10-01T18:09:45.206Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "wliilamsam/m61-1315-0-006022-0-027956-0-029068-1-491555",
+        "wliilamsam/molfold",
+        "wliilamsam/mordred-clean",
+        "negoto/mordred-1-2-0-py3-none-any",
+        "senkin13/rdkit-2025-3-3-cp311"
+      ],
+      "kernelDataSources": [],
+      "competitionDataSources": [
+        "neurips-open-polymer-prediction-2025"
+      ],
+      "totalVotes": 0,
+      "modelDataSources": [],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:320043e14c68293f1c946585b9257123385205a58af4b94b17d31868cae4e868",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  {
+    "slug": "cnnlstm-bamod4c-26793f",
+    "version": "",
+    "status": "unavailable",
+    "errorType": "HTTPError"
+  }
+]

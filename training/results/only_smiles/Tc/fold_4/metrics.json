@@ -1,0 +1,11 @@
+{
+  "variant": "only_smiles",
+  "target": "Tc",
+  "fold": 4,
+  "n_test": 173,
+  "n_train": 693,
+  "selected_epochs": 26,
+  "mae": 0.028151516620941532,
+  "rmse": 0.03776054169829025,
+  "r2": 0.819222565486209
+}

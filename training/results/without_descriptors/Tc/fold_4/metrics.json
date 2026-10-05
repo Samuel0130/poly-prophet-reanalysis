@@ -1,0 +1,11 @@
+{
+  "variant": "without_descriptors",
+  "target": "Tc",
+  "fold": 4,
+  "n_test": 173,
+  "n_train": 693,
+  "selected_epochs": 32,
+  "mae": 0.02761332446451919,
+  "rmse": 0.038357367207836085,
+  "r2": 0.8134628369701296
+}

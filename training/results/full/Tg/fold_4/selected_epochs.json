@@ -1,0 +1,5 @@
+{
+  "epochs_selected": 15,
+  "inner_best_mae": 46.2795472200413,
+  "epochs_run": 30
+}

@@ -1,0 +1,11 @@
+{
+  "variant": "only_smiles",
+  "target": "Rg",
+  "fold": 3,
+  "n_test": 123,
+  "n_train": 491,
+  "selected_epochs": 14,
+  "mae": 1.6471791491689889,
+  "rmse": 2.2326683516056214,
+  "r2": 0.743663430914061
+}

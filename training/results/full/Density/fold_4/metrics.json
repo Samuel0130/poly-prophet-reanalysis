@@ -1,0 +1,11 @@
+{
+  "variant": "full",
+  "target": "Density",
+  "fold": 4,
+  "n_test": 122,
+  "n_train": 491,
+  "selected_epochs": 58,
+  "mae": 0.02408340428684897,
+  "rmse": 0.036333903745674696,
+  "r2": 0.9337700633772349
+}

@@ -1,0 +1,11 @@
+{
+  "variant": "without_molformer",
+  "target": "Tc",
+  "fold": 1,
+  "n_test": 174,
+  "n_train": 692,
+  "selected_epochs": 40,
+  "mae": 0.033104734957766266,
+  "rmse": 0.05614278196786007,
+  "r2": 0.626663486764989
+}

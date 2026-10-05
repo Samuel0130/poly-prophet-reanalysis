@@ -1,0 +1,11 @@
+{
+  "variant": "without_lstm",
+  "target": "Tg",
+  "fold": 1,
+  "n_test": 111,
+  "n_train": 446,
+  "selected_epochs": 14,
+  "mae": 61.32211239183061,
+  "rmse": 77.78450193098925,
+  "r2": 0.4821028208603625
+}

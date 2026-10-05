@@ -1,0 +1,28 @@
+{
+  "epochs_max": 80,
+  "batch_size": 64,
+  "seed": 42,
+  "variants": [
+    "full",
+    "without_molformer",
+    "without_descriptors",
+    "without_cnn",
+    "without_lstm",
+    "without_augmentation",
+    "only_smiles"
+  ],
+  "targets": [
+    "Tg",
+    "FFV",
+    "Tc",
+    "Density",
+    "Rg"
+  ],
+  "outer_folds": 5,
+  "inner_holdout": 0.2,
+  "architecture": "user original SimpleMolFormerCNNLSTM; removed branches physically excluded from fusion",
+  "model_input": "original inference 64D MolFormer; 17D original backbone descriptor; 256D char embedding",
+  "changes_from_original": "batch=64; fold-local z-score target/descriptor scaling; shared non-stereo groups; inner early stopping plus full outer-train refit; deterministic cached MolFormer with 3 randomized SMILES",
+  "outer_folds_sha256": "51eaf12cb90dc7a184e40a0d3ce4b5fe3aeb8061282cde98a413aafd8795f5fe",
+  "dataset_sha256": "89cb1eafa340a9de737c37878ad9d64235522d61274beb120adfe361d7412f5d"
+}

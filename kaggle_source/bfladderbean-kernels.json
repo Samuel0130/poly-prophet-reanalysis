@@ -1,0 +1,51 @@
+{
+  "kernels": [
+    {
+      "id": 0,
+      "ref": "bfladderbean/neurips-open-polymer-prediction",
+      "title": "NeurIPS-Open Polymer Prediction",
+      "author": "BFladderbean",
+      "slug": "",
+      "lastRunTime": "2025-09-11T01:42:53.417Z",
+      "language": null,
+      "kernelType": null,
+      "isPrivate": null,
+      "enableGpu": null,
+      "enableInternet": null,
+      "categoryIds": [],
+      "datasetDataSources": [],
+      "kernelDataSources": [],
+      "competitionDataSources": [],
+      "totalVotes": 0,
+      "modelDataSources": [],
+      "enableTpu": null,
+      "currentVersionNumber": null,
+      "dockerImage": null,
+      "machineShape": null
+    },
+    {
+      "id": 0,
+      "ref": "bfladderbean/music-recommendation-user-based",
+      "title": "Music Recommendation/User-based",
+      "author": "BFladderbean",
+      "slug": "",
+      "lastRunTime": "2025-04-25T11:55:01.327Z",
+      "language": null,
+      "kernelType": null,
+      "isPrivate": null,
+      "enableGpu": null,
+      "enableInternet": null,
+      "categoryIds": [],
+      "datasetDataSources": [],
+      "kernelDataSources": [],
+      "competitionDataSources": [],
+      "totalVotes": 0,
+      "modelDataSources": [],
+      "enableTpu": null,
+      "currentVersionNumber": null,
+      "dockerImage": null,
+      "machineShape": null
+    }
+  ],
+  "nextPageToken": ""
+}

@@ -1,0 +1,8 @@
+kaggle==2.2.4
+kagglesdk==0.1.37
+numpy==2.5.3
+pandas==3.0.6
+rdkit==2025.3.3
+pypdf==6.19.0
+python-docx==1.2.0
+openpyxl==3.1.5

@@ -1,0 +1,33 @@
+{
+  "createdUTC": "2026-10-04T18:14:27.292318+00:00",
+  "python": "3.12.3",
+  "pandas": "3.0.6",
+  "numpy": "2.5.3",
+  "rdkit": "2025.03.3",
+  "original_inference_notebook": "cnnlstm-bamod4c-molfold-aug-infer.ipynb",
+  "author_training_notebook": "kaggle_source/original_training/cnnlstm-bamod4c/cnnlstm-bamod4c.ipynb",
+  "training_kernel_ref": "bfladderbean/cnnlstm-bamod4c",
+  "training_kernel_version": 1,
+  "training_source_sha256": "a794c444e0e6259fcda9416f3fa88e8d416a4b1f967a1a6b34655c6fd5178cf8",
+  "original_inference_sha256": "6a997f793a086998de7721500daa5f23f2360f972dfa6875ecc5d7ebeb94ce3d",
+  "identity": "RDKit canonical isomeric SMILES, exact original inference canonicalizer",
+  "sd": "sample standard deviation, ddof=1, nonmissing unscaled labels only",
+  "merge_policy": "author training function: supplemental duplicate mean, preserve primary labels, fill missing or append new identity",
+  "historical_checkpoint_training_membership": "not independently established: output has weights only, no row/fold manifest",
+  "all_downloaded_train_source_unique_structures": 10343,
+  "merged_labeled_unique_polymers": 8972,
+  "dataset2_unique_unlabeled": 7174,
+  "dataset2_overlap_with_merged": 5803,
+  "dataset2_only_unique": 1371,
+  "visible_test_unique": 3,
+  "visible_test_overlap_with_merged": 3,
+  "label_conflict_count": 2,
+  "labels": {
+    "Tg": 557,
+    "FFV": 7892,
+    "Tc": 866,
+    "Density": 613,
+    "Rg": 614
+  },
+  "verification": "canonicalizers agree for every input; unique merged identities; exact membership union; primary labels unchanged; supplement means and label provenance checked"
+}

@@ -1,0 +1,28 @@
+{
+  "pid": 17906,
+  "started": "2026-10-05 11:12:33",
+  "state": "complete",
+  "worker_groups": {
+    "small_targets": [
+      "Tg",
+      "Tc",
+      "Density",
+      "Rg"
+    ],
+    "FFV": [
+      "FFV"
+    ]
+  },
+  "reason_for_parallel_restart": "same protocol/seeds; resume checkpoints; move largest target onto a concurrent GPU worker",
+  "worker_pids": {
+    "small_targets": 17908,
+    "FFV": 17909
+  },
+  "worker_exit_codes": {
+    "small_targets": 0,
+    "FFV": 0
+  },
+  "report_exit_code": 0,
+  "completed_models": 175,
+  "finished": "2026-10-05 13:19:06"
+}

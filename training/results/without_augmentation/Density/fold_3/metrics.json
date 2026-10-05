@@ -1,0 +1,11 @@
+{
+  "variant": "without_augmentation",
+  "target": "Density",
+  "fold": 3,
+  "n_test": 123,
+  "n_train": 490,
+  "selected_epochs": 38,
+  "mae": 0.03178054347104775,
+  "rmse": 0.046251818728194394,
+  "r2": 0.8856020225275696
+}

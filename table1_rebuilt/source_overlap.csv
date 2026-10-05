@@ -1,0 +1,16 @@
+source_a,source_b,overlap_unique,a_only_unique,b_only_unique
+train,dataset1,737,7236,129
+train,dataset2,5191,2782,1983
+train,dataset3,0,7973,46
+train,dataset4,0,7973,862
+train,test,0,7973,3
+dataset1,dataset2,467,399,6707
+dataset1,dataset3,0,866,46
+dataset1,dataset4,38,828,824
+dataset1,test,0,866,3
+dataset2,dataset3,0,7174,46
+dataset2,dataset4,590,6584,272
+dataset2,test,2,7172,1
+dataset3,dataset4,0,46,862
+dataset3,test,0,46,3
+dataset4,test,3,859,0

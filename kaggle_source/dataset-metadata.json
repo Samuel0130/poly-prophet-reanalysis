@@ -1,0 +1,227 @@
+[
+  {
+    "id": 8125183,
+    "ref": "wliilamsam/m61-1315-0-006022-0-027956-0-029068-1-491555",
+    "subtitle": "",
+    "creatorName": "sam_the_rice_cake",
+    "creatorUrl": null,
+    "totalBytes": 70654201,
+    "url": null,
+    "lastUpdated": "2025-08-23T15:30:44.357Z",
+    "downloadCount": 0,
+    "isPrivate": true,
+    "isFeatured": false,
+    "licenseName": "Unknown",
+    "description": "",
+    "ownerName": "sam_the_rice_cake",
+    "ownerRef": "wliilamsam",
+    "kernelCount": 0,
+    "title": "M61.1315_0.006022_0.027956_0.029068_1.491555",
+    "topicCount": 0,
+    "viewCount": 3,
+    "voteCount": 0,
+    "currentVersionNumber": 1,
+    "usabilityRating": 0.25,
+    "tags": [
+      {
+        "ref": "pre-trained model",
+        "name": "pre-trained model",
+        "description": "",
+        "fullPath": "admin > pre-trained model",
+        "competitionCount": 2,
+        "datasetCount": 564624,
+        "scriptCount": 301,
+        "totalCount": 564927
+      }
+    ],
+    "files": [],
+    "versions": [
+      {
+        "versionNumber": 1,
+        "creationDate": "2025-08-23T15:30:44.357Z",
+        "creatorName": "sam_the_rice_cake",
+        "creatorRef": "m61-1315-0-006022-0-027956-0-029068-1-491555",
+        "versionNotes": "Initial release",
+        "status": "Ready"
+      }
+    ],
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-96.png-7956070/dataset-thumbnail.png"
+  },
+  {
+    "id": 8193138,
+    "ref": "wliilamsam/molfold",
+    "subtitle": "",
+    "creatorName": "sam_the_rice_cake",
+    "creatorUrl": null,
+    "totalBytes": 375055277,
+    "url": null,
+    "lastUpdated": "2025-09-03T05:31:58.863Z",
+    "downloadCount": 9,
+    "isPrivate": false,
+    "isFeatured": false,
+    "licenseName": "Apache 2.0",
+    "description": "",
+    "ownerName": "sam_the_rice_cake",
+    "ownerRef": "wliilamsam",
+    "kernelCount": 0,
+    "title": "molfold",
+    "topicCount": 0,
+    "viewCount": 129,
+    "voteCount": 1,
+    "currentVersionNumber": 1,
+    "usabilityRating": 0.3125,
+    "tags": [],
+    "files": [],
+    "versions": [
+      {
+        "versionNumber": 1,
+        "creationDate": "2025-09-03T05:31:58.863Z",
+        "creatorName": "sam_the_rice_cake",
+        "creatorRef": "molfold",
+        "versionNotes": "Initial release",
+        "status": "Ready"
+      }
+    ],
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-55.png-7956070/dataset-thumbnail.png"
+  },
+  {
+    "id": 8193876,
+    "ref": "wliilamsam/mordred-clean",
+    "subtitle": "",
+    "creatorName": "sam_the_rice_cake",
+    "creatorUrl": null,
+    "totalBytes": 42711490,
+    "url": null,
+    "lastUpdated": "2025-09-03T07:36:22.913Z",
+    "downloadCount": 1,
+    "isPrivate": true,
+    "isFeatured": false,
+    "licenseName": "Unknown",
+    "description": "",
+    "ownerName": "sam_the_rice_cake",
+    "ownerRef": "wliilamsam",
+    "kernelCount": 1,
+    "title": "mordred_clean",
+    "topicCount": 0,
+    "viewCount": 11,
+    "voteCount": 0,
+    "currentVersionNumber": 1,
+    "usabilityRating": 0.1764706,
+    "tags": [],
+    "files": [],
+    "versions": [
+      {
+        "versionNumber": 1,
+        "creationDate": "2025-09-03T07:36:22.913Z",
+        "creatorName": "sam_the_rice_cake",
+        "creatorRef": "mordred-clean",
+        "versionNotes": "Initial release",
+        "status": "Ready"
+      }
+    ],
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-69.png-7956070/dataset-thumbnail.png"
+  },
+  {
+    "id": 7706066,
+    "ref": "negoto/mordred-1-2-0-py3-none-any",
+    "subtitle": "mordred library (.whl) for offline Kaggle notebooks",
+    "creatorName": "Ryo Asashi",
+    "creatorUrl": null,
+    "totalBytes": 2201943,
+    "url": null,
+    "lastUpdated": "2025-06-21T11:35:28.640Z",
+    "downloadCount": 243,
+    "isPrivate": false,
+    "isFeatured": false,
+    "licenseName": "Other (specified in description)",
+    "description": "**mordred** is a Python library for molecular descriptor calculation ([online documentation](https://mordred-descriptor.github.io/documentation/master/)).\nThis dataset is intended for use in *internet-disabled* (i.e., offline) Kaggle notebooks.\n\n```\n# install mordred 1.2.0 and networkx 2.8.8\n!pip install mordred --no-index --find-links=file:///kaggle/input/mordred-1-2-0-py3-none-any/\n```",
+    "ownerName": "Ryo Asashi",
+    "ownerRef": "negoto",
+    "kernelCount": 45,
+    "title": "mordred-1.2.0-py3-none-any",
+    "topicCount": 0,
+    "viewCount": 1509,
+    "voteCount": 17,
+    "currentVersionNumber": 2,
+    "usabilityRating": 0.6875,
+    "tags": [
+      {
+        "ref": "python",
+        "name": "python",
+        "description": "",
+        "fullPath": "subject > science and technology > computer science > programming > python",
+        "competitionCount": 16,
+        "datasetCount": 3068,
+        "scriptCount": 15503,
+        "totalCount": 18587
+      },
+      {
+        "ref": "chemistry",
+        "name": "chemistry",
+        "description": "Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds.",
+        "fullPath": "subject > earth and nature > physical science > chemistry",
+        "competitionCount": 16,
+        "datasetCount": 1204,
+        "scriptCount": 2287,
+        "totalCount": 3507
+      }
+    ],
+    "files": [],
+    "versions": [
+      {
+        "versionNumber": 2,
+        "creationDate": "2025-06-21T11:35:28.640Z",
+        "creatorName": "Ryo Asashi",
+        "creatorRef": "mordred-1-2-0-py3-none-any",
+        "versionNotes": "Update 2025-06-21",
+        "status": "Ready"
+      },
+      {
+        "versionNumber": 1,
+        "creationDate": "2025-06-20T16:46:39.190Z",
+        "creatorName": "Ryo Asashi",
+        "creatorRef": "mordred-1-2-0-py3-none-any",
+        "versionNotes": "Initial release",
+        "status": "Ready"
+      }
+    ],
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-76.png-4701871/dataset-thumbnail.png"
+  },
+  {
+    "id": 7678100,
+    "ref": "senkin13/rdkit-2025-3-3-cp311",
+    "subtitle": "",
+    "creatorName": "senkin13",
+    "creatorUrl": null,
+    "totalBytes": 34881186,
+    "url": null,
+    "lastUpdated": "2025-06-17T02:23:05.460Z",
+    "downloadCount": 896,
+    "isPrivate": false,
+    "isFeatured": false,
+    "licenseName": "Unknown",
+    "description": "",
+    "ownerName": "senkin13",
+    "ownerRef": "senkin13",
+    "kernelCount": 196,
+    "title": "rdkit-2025.3.3-cp311",
+    "topicCount": 0,
+    "viewCount": 2011,
+    "voteCount": 22,
+    "currentVersionNumber": 1,
+    "usabilityRating": 0.1875,
+    "tags": [],
+    "files": [],
+    "versions": [
+      {
+        "versionNumber": 1,
+        "creationDate": "2025-06-17T02:23:05.460Z",
+        "creatorName": "senkin13",
+        "creatorRef": "rdkit-2025-3-3-cp311",
+        "versionNotes": "Initial release",
+        "status": "Ready"
+      }
+    ],
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-93.png-715257/dataset-thumbnail.png"
+  }
+]

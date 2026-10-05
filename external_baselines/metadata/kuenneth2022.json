@@ -1,0 +1,1485 @@
+{
+  "id": "https://openalex.org/W4310806566",
+  "doi": "https://doi.org/10.1038/s43246-022-00319-2",
+  "title": "Bioplastic design using multitask deep neural networks",
+  "display_name": "Bioplastic design using multitask deep neural networks",
+  "publication_year": 2022,
+  "publication_date": "2022-12-03",
+  "ids": {
+    "openalex": "https://openalex.org/W4310806566",
+    "doi": "https://doi.org/10.1038/s43246-022-00319-2"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1038/s43246-022-00319-2",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1038/s43246-022-00319-2",
+    "pdf_url": "https://www.nature.com/articles/s43246-022-00319-2.pdf",
+    "source": {
+      "id": "https://openalex.org/S4210233566",
+      "display_name": "Communications Materials",
+      "issn_l": "2662-4443",
+      "issn": [
+        "2662-4443"
+      ],
+      "is_oa": true,
+      "is_in_doaj": true,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "doaj",
+        "jufo-1",
+        "norway-1"
+      ],
+      "host_organization": "https://openalex.org/P4310319908",
+      "host_organization_name": "Nature Portfolio",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310319908",
+        "https://openalex.org/P4310319965"
+      ],
+      "host_organization_lineage_names": [
+        "Nature Portfolio",
+        "Springer Nature"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Communications Materials",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "arxiv",
+    "crossref",
+    "datacite",
+    "doaj"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "gold",
+    "oa_url": "https://www.nature.com/articles/s43246-022-00319-2.pdf",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5114142738",
+        "display_name": "Christopher Kuenneth",
+        "orcid": null,
+        "observed_orcids": []
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I130701444",
+          "display_name": "Georgia Institute of Technology",
+          "ror": "https://ror.org/01zkghx44",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I130701444"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I1343871089",
+          "display_name": "Los Alamos National Laboratory",
+          "ror": "https://ror.org/01e41cf67",
+          "country_code": "US",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1330989302",
+            "https://openalex.org/I1343871089",
+            "https://openalex.org/I198811213",
+            "https://openalex.org/I4210120050"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Christopher Kuenneth",
+      "raw_affiliation_strings": [
+        "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+        "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, 30332, USA",
+        "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, USA",
+        "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-6958-4679",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, 30332, USA",
+          "institution_ids": [
+            "https://openalex.org/I130701444"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, USA",
+          "institution_ids": [
+            "https://openalex.org/I130701444"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5068502035",
+        "display_name": "Jessica N. Lalonde",
+        "orcid": "https://orcid.org/0000-0002-3747-8775",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-3747-8775"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I1343871089",
+          "display_name": "Los Alamos National Laboratory",
+          "ror": "https://ror.org/01e41cf67",
+          "country_code": "US",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1330989302",
+            "https://openalex.org/I1343871089",
+            "https://openalex.org/I198811213",
+            "https://openalex.org/I4210120050"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I170897317",
+          "display_name": "Duke University",
+          "ror": "https://ror.org/00py81415",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I170897317"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Jessica Lalonde",
+      "raw_affiliation_strings": [
+        "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+        "Department of Mechanical Engineering and Materials Science, Duke University, Durham, NC, 27708, USA",
+        "Bioscience Division, Los Alamos National Laboratory, Los Alamos, USA",
+        "Department of Mechanical Engineering and Materials Science, Duke University, Durham, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Department of Mechanical Engineering and Materials Science, Duke University, Durham, NC, 27708, USA",
+          "institution_ids": [
+            "https://openalex.org/I170897317"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Bioscience Division, Los Alamos National Laboratory, Los Alamos, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Department of Mechanical Engineering and Materials Science, Duke University, Durham, USA",
+          "institution_ids": [
+            "https://openalex.org/I170897317"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5065259104",
+        "display_name": "Babetta L. Marrone",
+        "orcid": "https://orcid.org/0000-0001-5002-1289",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-5002-1289"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I1343871089",
+          "display_name": "Los Alamos National Laboratory",
+          "ror": "https://ror.org/01e41cf67",
+          "country_code": "US",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1330989302",
+            "https://openalex.org/I1343871089",
+            "https://openalex.org/I198811213",
+            "https://openalex.org/I4210120050"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Babetta L. Marrone",
+      "raw_affiliation_strings": [
+        "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+        "Bioscience Division, Los Alamos National Laboratory, Los Alamos, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Bioscience Division, Los Alamos National Laboratory, Los Alamos, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5002866861",
+        "display_name": "Carl N. Iverson",
+        "orcid": "https://orcid.org/0000-0002-9854-0026",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-9854-0026"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I1343871089",
+          "display_name": "Los Alamos National Laboratory",
+          "ror": "https://ror.org/01e41cf67",
+          "country_code": "US",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1330989302",
+            "https://openalex.org/I1343871089",
+            "https://openalex.org/I198811213",
+            "https://openalex.org/I4210120050"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Carl N. Iverson",
+      "raw_affiliation_strings": [
+        "Chemistry Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+        "Chemistry Division, Los Alamos National Laboratory, Los Alamos, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Chemistry Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Chemistry Division, Los Alamos National Laboratory, Los Alamos, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5031952600",
+        "display_name": "Rampi Ramprasad",
+        "orcid": "https://orcid.org/0000-0003-4630-1565",
+        "observed_orcids": [
+          "https://orcid.org/0000-0003-4630-1565"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I130701444",
+          "display_name": "Georgia Institute of Technology",
+          "ror": "https://ror.org/01zkghx44",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I130701444"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Rampi Ramprasad",
+      "raw_affiliation_strings": [
+        "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, 30332, USA",
+        "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, 30332, USA",
+          "institution_ids": [
+            "https://openalex.org/I130701444"
+          ]
+        },
+        {
+          "raw_affiliation_string": "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, USA",
+          "institution_ids": [
+            "https://openalex.org/I130701444"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5075051974",
+        "display_name": "Ghanshyam Pilania",
+        "orcid": "https://orcid.org/0000-0003-4460-1572",
+        "observed_orcids": [
+          "https://orcid.org/0000-0003-4460-1572"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I1343871089",
+          "display_name": "Los Alamos National Laboratory",
+          "ror": "https://ror.org/01e41cf67",
+          "country_code": "US",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1330989302",
+            "https://openalex.org/I1343871089",
+            "https://openalex.org/I198811213",
+            "https://openalex.org/I4210120050"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Ghanshyam Pilania",
+      "raw_affiliation_strings": [
+        "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+        "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0003-4460-1572",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343871089"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 3,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5075051974"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I1343871089"
+  ],
+  "apc_list": {
+    "value": 3190,
+    "currency": "USD",
+    "value_usd": 3190
+  },
+  "apc_paid": {
+    "value": 3190,
+    "currency": "USD",
+    "value_usd": 3190
+  },
+  "fwci": 3.0818,
+  "has_fulltext": true,
+  "cited_by_count": 63,
+  "citation_normalized_percentile": {
+    "value": 0.93248615,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "3",
+    "issue": "1",
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11948",
+    "display_name": "Machine Learning in Materials Science",
+    "score": 0.993399977684021,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2505",
+      "display_name": "Materials Chemistry"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/25",
+      "display_name": "Materials Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11948",
+      "display_name": "Machine Learning in Materials Science",
+      "score": 0.993399977684021,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2505",
+        "display_name": "Materials Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10661",
+      "display_name": "biodegradable polymer synthesis and properties",
+      "score": 0.9645000100135803,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2502",
+        "display_name": "Biomaterials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T13180",
+      "display_name": "Chemistry and Chemical Engineering",
+      "score": 0.9205999970436096,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2304",
+        "display_name": "Environmental Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/polyhydroxyalkanoates",
+      "display_name": "polyhydroxyalkanoates",
+      "score": 0.9729999899864197
+    },
+    {
+      "id": "https://openalex.org/keywords/bioplastics",
+      "display_name": "bioplastics",
+      "score": 0.9760000109672546
+    },
+    {
+      "id": "https://openalex.org/keywords/property-prediction",
+      "display_name": "property prediction",
+      "score": 0.8059999942779541
+    },
+    {
+      "id": "https://openalex.org/keywords/copolymer-design",
+      "display_name": "copolymer design",
+      "score": 0.6899999976158142
+    },
+    {
+      "id": "https://openalex.org/keywords/plastic-waste",
+      "display_name": "plastic waste",
+      "score": 0.49300000071525574
+    },
+    {
+      "id": "https://openalex.org/keywords/biodegradable-polymers",
+      "display_name": "biodegradable polymers",
+      "score": 0.8339999914169312
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C43719734",
+      "wikidata": "https://www.wikidata.org/wiki/Q413458",
+      "display_name": "Bioplastic",
+      "level": 2,
+      "score": 0.9120745062828064
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.4968588650226593
+    },
+    {
+      "id": "https://openalex.org/C183696295",
+      "wikidata": "https://www.wikidata.org/wiki/Q2487696",
+      "display_name": "Biochemical engineering",
+      "level": 1,
+      "score": 0.486707478761673
+    },
+    {
+      "id": "https://openalex.org/C2779439359",
+      "wikidata": "https://www.wikidata.org/wiki/Q317088",
+      "display_name": "Commodity",
+      "level": 2,
+      "score": 0.45843133330345154
+    },
+    {
+      "id": "https://openalex.org/C154945302",
+      "wikidata": "https://www.wikidata.org/wiki/Q11660",
+      "display_name": "Artificial intelligence",
+      "level": 1,
+      "score": 0.3777814209461212
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.24172723293304443
+    },
+    {
+      "id": "https://openalex.org/C144133560",
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+      "display_name": "Business",
+      "level": 0,
+      "score": 0.21234875917434692
+    },
+    {
+      "id": "https://openalex.org/C548081761",
+      "wikidata": "https://www.wikidata.org/wiki/Q180388",
+      "display_name": "Waste management",
+      "level": 1,
+      "score": 0.10032159090042114
+    },
+    {
+      "id": "https://openalex.org/C10138342",
+      "wikidata": "https://www.wikidata.org/wiki/Q43015",
+      "display_name": "Finance",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 6,
+  "locations": [
+    {
+      "id": "doi:10.1038/s43246-022-00319-2",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1038/s43246-022-00319-2",
+      "pdf_url": "https://www.nature.com/articles/s43246-022-00319-2.pdf",
+      "source": {
+        "id": "https://openalex.org/S4210233566",
+        "display_name": "Communications Materials",
+        "issn_l": "2662-4443",
+        "issn": [
+          "2662-4443"
+        ],
+        "is_oa": true,
+        "is_in_doaj": true,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "doaj",
+          "jufo-1",
+          "norway-1"
+        ],
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_name": "Nature Portfolio",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Communications Materials",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:arXiv.org:2203.12033",
+      "is_oa": true,
+      "landing_page_url": "http://arxiv.org/abs/2203.12033",
+      "pdf_url": "https://arxiv.org/pdf/2203.12033",
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "text"
+    },
+    {
+      "id": "pmh:oai:doaj.org/article:3c9921783df34dd3ab1b366c1b850d84",
+      "is_oa": true,
+      "landing_page_url": "https://doaj.org/article/3c9921783df34dd3ab1b366c1b850d84",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306401280",
+        "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by-sa",
+      "license_id": "https://openalex.org/licenses/cc-by-sa",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "Communications Materials, Vol 3, Iss 1, Pp 1-10 (2022)",
+      "raw_type": "article"
+    },
+    {
+      "id": "pmh:oai:osti.gov:1902538",
+      "is_oa": false,
+      "landing_page_url": "https://www.osti.gov/biblio/1902538",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306402487",
+        "display_name": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I139351228",
+        "host_organization_name": "Office of Scientific and Technical Information",
+        "host_organization_lineage": [
+          "https://openalex.org/I139351228"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": null
+    },
+    {
+      "id": "pmh:oai:osti.gov:1974937",
+      "is_oa": false,
+      "landing_page_url": "https://www.osti.gov/biblio/1974937",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306402487",
+        "display_name": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I139351228",
+        "host_organization_name": "Office of Scientific and Technical Information",
+        "host_organization_lineage": [
+          "https://openalex.org/I139351228"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": null
+    },
+    {
+      "id": "doi:10.48550/arxiv.2203.12033",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2203.12033",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": "article-journal"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1038/s43246-022-00319-2",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1038/s43246-022-00319-2",
+    "pdf_url": "https://www.nature.com/articles/s43246-022-00319-2.pdf",
+    "source": {
+      "id": "https://openalex.org/S4210233566",
+      "display_name": "Communications Materials",
+      "issn_l": "2662-4443",
+      "issn": [
+        "2662-4443"
+      ],
+      "is_oa": true,
+      "is_in_doaj": true,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "doaj",
+        "jufo-1",
+        "norway-1"
+      ],
+      "host_organization": "https://openalex.org/P4310319908",
+      "host_organization_name": "Nature Portfolio",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310319908",
+        "https://openalex.org/P4310319965"
+      ],
+      "host_organization_lineage_names": [
+        "Nature Portfolio",
+        "Springer Nature"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Communications Materials",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [
+    {
+      "id": "https://metadata.un.org/sdg/12",
+      "display_name": "Responsible consumption and production",
+      "score": 0.833299994468689
+    }
+  ],
+  "sustainable_development_goals_aurora": [
+    {
+      "id": "https://metadata.un.org/sdg/12",
+      "display_name": "Responsible consumption and production",
+      "score": 0.4699999988079071
+    }
+  ],
+  "study_designs": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G1017065088",
+      "display_name": null,
+      "funder_award_id": "#89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320306084",
+      "funder_display_name": "U.S. Department of Energy"
+    },
+    {
+      "id": "https://openalex.org/G1279347439",
+      "display_name": null,
+      "funder_award_id": "89233218CNA 000001",
+      "funder_id": "https://openalex.org/F4320338304",
+      "funder_display_name": "Los Alamos National Laboratory"
+    },
+    {
+      "id": "https://openalex.org/G1599055911",
+      "display_name": null,
+      "funder_award_id": "20190001DR",
+      "funder_id": "https://openalex.org/F4320337547",
+      "funder_display_name": "Laboratory Directed Research and Development"
+    },
+    {
+      "id": "https://openalex.org/G2356915424",
+      "display_name": null,
+      "funder_award_id": "89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320337547",
+      "funder_display_name": "Laboratory Directed Research and Development"
+    },
+    {
+      "id": "https://openalex.org/G2776190829",
+      "display_name": null,
+      "funder_award_id": "Contract No. 89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320306084",
+      "funder_display_name": "U.S. Department of Energy"
+    },
+    {
+      "id": "https://openalex.org/G2821339390",
+      "display_name": null,
+      "funder_award_id": "89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G3639950960",
+      "display_name": null,
+      "funder_award_id": "20190001DR",
+      "funder_id": "https://openalex.org/F4320338304",
+      "funder_display_name": "Los Alamos National Laboratory"
+    },
+    {
+      "id": "https://openalex.org/G4504108201",
+      "display_name": null,
+      "funder_award_id": "N00014-17-1",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G4558963220",
+      "display_name": null,
+      "funder_award_id": "N00014\u201017\u20101\u20102656",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G4748082740",
+      "display_name": null,
+      "funder_award_id": "Contract No. 89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320338304",
+      "funder_display_name": "Los Alamos National Laboratory"
+    },
+    {
+      "id": "https://openalex.org/G5397617431",
+      "display_name": null,
+      "funder_award_id": "N00014-17-1-2656",
+      "funder_id": "https://openalex.org/F4320333591",
+      "funder_display_name": "Multidisciplinary University Research Initiative"
+    },
+    {
+      "id": "https://openalex.org/G6410514744",
+      "display_name": null,
+      "funder_award_id": "89233218C-NA000001",
+      "funder_id": "https://openalex.org/F4320332369",
+      "funder_display_name": "National Nuclear Security Administration"
+    },
+    {
+      "id": "https://openalex.org/G6563880843",
+      "display_name": null,
+      "funder_award_id": "No.  89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320332369",
+      "funder_display_name": "National Nuclear Security Administration"
+    },
+    {
+      "id": "https://openalex.org/G687221081",
+      "display_name": null,
+      "funder_award_id": "N00014-20-2175",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G8006577219",
+      "display_name": null,
+      "funder_award_id": "N00014-20",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G8770029225",
+      "display_name": null,
+      "funder_award_id": "No. 89233218CNA000001",
+      "funder_id": "https://openalex.org/F4320338304",
+      "funder_display_name": "Los Alamos National Laboratory"
+    },
+    {
+      "id": "https://openalex.org/G8876996369",
+      "display_name": null,
+      "funder_award_id": "N00014",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G8929337198",
+      "display_name": null,
+      "funder_award_id": "N00014-17",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320306084",
+      "display_name": "U.S. Department of Energy",
+      "ror": "https://ror.org/01bj3aw27"
+    },
+    {
+      "id": "https://openalex.org/F4320308269",
+      "display_name": "Alexander von Humboldt-Stiftung",
+      "ror": "https://ror.org/012kf4317"
+    },
+    {
+      "id": "https://openalex.org/F4320332369",
+      "display_name": "National Nuclear Security Administration",
+      "ror": "https://ror.org/03sk1we31"
+    },
+    {
+      "id": "https://openalex.org/F4320333591",
+      "display_name": "Multidisciplinary University Research Initiative",
+      "ror": null
+    },
+    {
+      "id": "https://openalex.org/F4320337345",
+      "display_name": "Office of Naval Research",
+      "ror": "https://ror.org/00rk2pe57"
+    },
+    {
+      "id": "https://openalex.org/F4320337547",
+      "display_name": "Laboratory Directed Research and Development",
+      "ror": "https://ror.org/01e41cf67"
+    },
+    {
+      "id": "https://openalex.org/F4320338304",
+      "display_name": "Los Alamos National Laboratory",
+      "ror": "https://ror.org/01e41cf67"
+    }
+  ],
+  "has_content": {
+    "pdf": true,
+    "grobid_xml": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W4310806566.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W4310806566.grobid-xml"
+  },
+  "referenced_works_count": 65,
+  "referenced_works": [
+    "https://openalex.org/W1513260206",
+    "https://openalex.org/W1532188040",
+    "https://openalex.org/W1579819207",
+    "https://openalex.org/W1975147762",
+    "https://openalex.org/W1999173943",
+    "https://openalex.org/W2019224265",
+    "https://openalex.org/W2025650969",
+    "https://openalex.org/W2033495141",
+    "https://openalex.org/W2048899869",
+    "https://openalex.org/W2050445699",
+    "https://openalex.org/W2080447388",
+    "https://openalex.org/W2106756509",
+    "https://openalex.org/W2170419170",
+    "https://openalex.org/W2244501064",
+    "https://openalex.org/W2315837940",
+    "https://openalex.org/W2334852804",
+    "https://openalex.org/W2415372084",
+    "https://openalex.org/W2520139587",
+    "https://openalex.org/W2619307713",
+    "https://openalex.org/W2737217596",
+    "https://openalex.org/W2754122850",
+    "https://openalex.org/W2759089248",
+    "https://openalex.org/W2786672974",
+    "https://openalex.org/W2883528235",
+    "https://openalex.org/W2901223208",
+    "https://openalex.org/W2901736581",
+    "https://openalex.org/W2904181725",
+    "https://openalex.org/W2951450280",
+    "https://openalex.org/W2952832141",
+    "https://openalex.org/W2953902164",
+    "https://openalex.org/W2963784900",
+    "https://openalex.org/W2984886967",
+    "https://openalex.org/W3004406521",
+    "https://openalex.org/W3007109491",
+    "https://openalex.org/W3024556032",
+    "https://openalex.org/W3043735243",
+    "https://openalex.org/W3094253913",
+    "https://openalex.org/W3095028680",
+    "https://openalex.org/W3095106934",
+    "https://openalex.org/W3096386116",
+    "https://openalex.org/W3100445615",
+    "https://openalex.org/W3103627354",
+    "https://openalex.org/W3109239857",
+    "https://openalex.org/W3111638286",
+    "https://openalex.org/W3114168740",
+    "https://openalex.org/W3134514978",
+    "https://openalex.org/W3142241411",
+    "https://openalex.org/W3155755963",
+    "https://openalex.org/W3156578609",
+    "https://openalex.org/W3157094372",
+    "https://openalex.org/W3158531414",
+    "https://openalex.org/W3161121665",
+    "https://openalex.org/W3165652640",
+    "https://openalex.org/W3165831121",
+    "https://openalex.org/W3166152888",
+    "https://openalex.org/W3178873356",
+    "https://openalex.org/W3190850349",
+    "https://openalex.org/W3193638860",
+    "https://openalex.org/W3207749172",
+    "https://openalex.org/W4205722716",
+    "https://openalex.org/W4206823071",
+    "https://openalex.org/W4206991725",
+    "https://openalex.org/W4207051571",
+    "https://openalex.org/W4213246275",
+    "https://openalex.org/W4281731195"
+  ],
+  "related_works": [
+    "https://openalex.org/W4391375266",
+    "https://openalex.org/W2899084033",
+    "https://openalex.org/W2748952813",
+    "https://openalex.org/W1563116787",
+    "https://openalex.org/W4309537274",
+    "https://openalex.org/W4379014669",
+    "https://openalex.org/W2552779345",
+    "https://openalex.org/W4200366873",
+    "https://openalex.org/W4377242022",
+    "https://openalex.org/W4294732882"
+  ],
+  "abstract_inverted_index": {
+    "Abstract": [
+      0
+    ],
+    "Non-degradable": [
+      1
+    ],
+    "plastic": [
+      2,
+      38,
+      113
+    ],
+    "waste": [
+      3
+    ],
+    "jeopardizes": [
+      4
+    ],
+    "our": [
+      5,
+      8
+    ],
+    "environment,": [
+      6
+    ],
+    "yet": [
+      7
+    ],
+    "modern": [
+      9
+    ],
+    "lifestyle": [
+      10
+    ],
+    "and": [
+      11,
+      21,
+      47,
+      74
+    ],
+    "current": [
+      12
+    ],
+    "technologies": [
+      13
+    ],
+    "are": [
+      14
+    ],
+    "impossible": [
+      15
+    ],
+    "to": [
+      16,
+      31
+    ],
+    "sustain": [
+      17
+    ],
+    "without": [
+      18
+    ],
+    "plastics.": [
+      19
+    ],
+    "Bio-synthesized": [
+      20
+    ],
+    "biodegradable": [
+      22
+    ],
+    "alternatives": [
+      23
+    ],
+    "such": [
+      24
+    ],
+    "as": [
+      25,
+      97
+    ],
+    "polyhydroxyalkanoates": [
+      26
+    ],
+    "(PHAs)": [
+      27
+    ],
+    "have": [
+      28
+    ],
+    "the": [
+      29,
+      36,
+      78,
+      110,
+      122
+    ],
+    "potential": [
+      30,
+      98
+    ],
+    "replace": [
+      32
+    ],
+    "large": [
+      33
+    ],
+    "portions": [
+      34
+    ],
+    "of": [
+      35,
+      70,
+      89,
+      109
+    ],
+    "world\u2019s": [
+      37,
+      111
+    ],
+    "supply": [
+      39
+    ],
+    "with": [
+      40
+    ],
+    "cradle-to-cradle": [
+      41
+    ],
+    "materials,": [
+      42
+    ],
+    "but": [
+      43
+    ],
+    "their": [
+      44
+    ],
+    "chemical": [
+      45
+    ],
+    "complexity": [
+      46
+    ],
+    "diversity": [
+      48
+    ],
+    "limit": [
+      49
+    ],
+    "traditional": [
+      50
+    ],
+    "resource-intensive": [
+      51
+    ],
+    "experimentation.": [
+      52
+    ],
+    "Here,": [
+      53
+    ],
+    "we": [
+      54,
+      80
+    ],
+    "develop": [
+      55
+    ],
+    "multitask": [
+      56
+    ],
+    "deep": [
+      57
+    ],
+    "neural": [
+      58
+    ],
+    "network": [
+      59
+    ],
+    "property": [
+      60
+    ],
+    "predictors": [
+      61
+    ],
+    "using": [
+      62
+    ],
+    "available": [
+      63
+    ],
+    "experimental": [
+      64
+    ],
+    "data": [
+      65
+    ],
+    "for": [
+      66,
+      100,
+      107,
+      121
+    ],
+    "a": [
+      67,
+      86
+    ],
+    "diverse": [
+      68
+    ],
+    "set": [
+      69
+    ],
+    "nearly": [
+      71
+    ],
+    "23,000": [
+      72
+    ],
+    "homo-": [
+      73
+    ],
+    "copolymer": [
+      75
+    ],
+    "chemistries.": [
+      76
+    ],
+    "Using": [
+      77
+    ],
+    "predictors,": [
+      79
+    ],
+    "identify": [
+      81
+    ],
+    "14": [
+      82
+    ],
+    "PHA-based": [
+      83
+    ],
+    "bioplastics": [
+      84
+    ],
+    "from": [
+      85
+    ],
+    "search": [
+      87
+    ],
+    "space": [
+      88
+    ],
+    "almost": [
+      90
+    ],
+    "1.4": [
+      91
+    ],
+    "million": [
+      92
+    ],
+    "candidates": [
+      93
+    ],
+    "which": [
+      94
+    ],
+    "could": [
+      95
+    ],
+    "serve": [
+      96
+    ],
+    "replacements": [
+      99
+    ],
+    "seven": [
+      101
+    ],
+    "petroleum-based": [
+      102
+    ],
+    "commodity": [
+      103
+    ],
+    "plastics": [
+      104
+    ],
+    "that": [
+      105
+    ],
+    "account": [
+      106
+    ],
+    "75%": [
+      108
+    ],
+    "yearly": [
+      112
+    ],
+    "production.": [
+      114
+    ],
+    "We": [
+      115
+    ],
+    "also": [
+      116
+    ],
+    "discuss": [
+      117
+    ],
+    "possible": [
+      118
+    ],
+    "synthesis": [
+      119
+    ],
+    "routes": [
+      120
+    ],
+    "identified": [
+      123
+    ],
+    "promising": [
+      124
+    ],
+    "materials.": [
+      125
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 17
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 18
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 18
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 9
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-09-29T14:09:16.559479",
+  "created_date": "2025-10-10T00:00:00"
+}

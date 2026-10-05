@@ -1,0 +1,11 @@
+{
+  "variant": "without_descriptors",
+  "target": "Density",
+  "fold": 2,
+  "n_test": 123,
+  "n_train": 490,
+  "selected_epochs": 53,
+  "mae": 0.02819390256650848,
+  "rmse": 0.046760594798994214,
+  "r2": 0.9105855273718453
+}

@@ -1,0 +1,1070 @@
+{
+  "id": "https://openalex.org/W4392952493",
+  "doi": "https://doi.org/10.1021/acsami.4c01207",
+  "title": "Multimodal Transformer for Property Prediction in Polymers",
+  "display_name": "Multimodal Transformer for Property Prediction in Polymers",
+  "publication_year": 2024,
+  "publication_date": "2024-03-19",
+  "ids": {
+    "openalex": "https://openalex.org/W4392952493",
+    "doi": "https://doi.org/10.1021/acsami.4c01207",
+    "pmid": "https://pubmed.ncbi.nlm.nih.gov/38501934"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1021/acsami.4c01207",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1021/acsami.4c01207",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S164001016",
+      "display_name": "ACS Applied Materials & Interfaces",
+      "issn_l": "1944-8244",
+      "issn": [
+        "1944-8244",
+        "1944-8252"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "jufo-2",
+        "ki-jl-1",
+        "medline",
+        "norway-1"
+      ],
+      "host_organization": "https://openalex.org/P4310320006",
+      "host_organization_name": "American Chemical Society",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320006"
+      ],
+      "host_organization_lineage_names": [
+        "American Chemical Society"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "ACS Applied Materials &amp; Interfaces",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref",
+    "pubmed"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5072167726",
+        "display_name": "Seunghee Han",
+        "orcid": "https://orcid.org/0000-0001-8696-6823",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-8696-6823",
+          "https://orcid.org/0000-0002-8733-5537"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I157485424",
+          "display_name": "Korea Advanced Institute of Science and Technology",
+          "ror": "https://ror.org/05apxxy63",
+          "country_code": "KR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I157485424"
+          ]
+        }
+      ],
+      "countries": [
+        "KR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Seunghee Han",
+      "raw_affiliation_strings": [
+        "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-8696-6823",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea",
+          "institution_ids": [
+            "https://openalex.org/I157485424"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5090245061",
+        "display_name": "Yeonghun Kang",
+        "orcid": "https://orcid.org/0000-0001-5191-5735",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-5191-5735"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I157485424",
+          "display_name": "Korea Advanced Institute of Science and Technology",
+          "ror": "https://ror.org/05apxxy63",
+          "country_code": "KR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I157485424"
+          ]
+        }
+      ],
+      "countries": [
+        "KR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Yeonghun Kang",
+      "raw_affiliation_strings": [
+        "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-5191-5735",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea",
+          "institution_ids": [
+            "https://openalex.org/I157485424"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5078836038",
+        "display_name": "Hyunsoo Park",
+        "orcid": "https://orcid.org/0000-0001-9388-173X",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-9388-173X"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I47508984",
+          "display_name": "Imperial College London",
+          "ror": "https://ror.org/041kmwe10",
+          "country_code": "GB",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I47508984"
+          ]
+        }
+      ],
+      "countries": [
+        "GB"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Hyunsoo Park",
+      "raw_affiliation_strings": [
+        "Department of Materials, Imperial College London, Exhibition Road, London SW7 2AZ, United Kingdom"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-9388-173X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Materials, Imperial College London, Exhibition Road, London SW7 2AZ, United Kingdom",
+          "institution_ids": [
+            "https://openalex.org/I47508984"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5109693234",
+        "display_name": "Jeesung Yi",
+        "orcid": null,
+        "observed_orcids": []
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Jeesung Yi",
+      "raw_affiliation_strings": [
+        "KOLON One&Only TOWER, 110, Magokdong-ro, Gangseo-gu, Seoul 07793, Republic of Korea"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "KOLON One&Only TOWER, 110, Magokdong-ro, Gangseo-gu, Seoul 07793, Republic of Korea",
+          "institution_ids": []
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5102419255",
+        "display_name": "Geunyeong Park",
+        "orcid": "https://orcid.org/0000-0002-1910-6097",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-1910-6097"
+        ]
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Geunyeong Park",
+      "raw_affiliation_strings": [
+        "KOLON One&Only TOWER, 110, Magokdong-ro, Gangseo-gu, Seoul 07793, Republic of Korea"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "KOLON One&Only TOWER, 110, Magokdong-ro, Gangseo-gu, Seoul 07793, Republic of Korea",
+          "institution_ids": []
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5018605846",
+        "display_name": "Jihan Kim",
+        "orcid": "https://orcid.org/0000-0002-3844-8789",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-3844-8789"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I157485424",
+          "display_name": "Korea Advanced Institute of Science and Technology",
+          "ror": "https://ror.org/05apxxy63",
+          "country_code": "KR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I157485424"
+          ]
+        }
+      ],
+      "countries": [
+        "KR"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Jihan Kim",
+      "raw_affiliation_strings": [
+        "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-3844-8789",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Chemical and Biomolecular Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea",
+          "institution_ids": [
+            "https://openalex.org/I157485424"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 2,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5018605846"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I157485424"
+  ],
+  "apc_list": {
+    "value": 4500,
+    "currency": "USD",
+    "value_usd": 4500
+  },
+  "apc_paid": null,
+  "fwci": 2.9725,
+  "has_fulltext": false,
+  "cited_by_count": 37,
+  "citation_normalized_percentile": {
+    "value": 0.94780802,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 94,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "16",
+    "issue": "13",
+    "first_page": "16853",
+    "last_page": "16860"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11948",
+    "display_name": "Machine Learning in Materials Science",
+    "score": 0.9998999834060669,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2505",
+      "display_name": "Materials Chemistry"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/25",
+      "display_name": "Materials Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11948",
+      "display_name": "Machine Learning in Materials Science",
+      "score": 0.9998999834060669,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2505",
+        "display_name": "Materials Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10409",
+      "display_name": "Fuel Cells and Related Materials",
+      "score": 0.996999979019165,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2208",
+        "display_name": "Electrical and Electronic Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10211",
+      "display_name": "Computational Drug Discovery Methods",
+      "score": 0.9828000068664551,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1703",
+        "display_name": "Computational Theory and Mathematics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/multimodal-transformer",
+      "display_name": "multimodal transformer",
+      "score": 0.878000020980835
+    },
+    {
+      "id": "https://openalex.org/keywords/polymer-property-prediction",
+      "display_name": "polymer property prediction",
+      "score": 0.9929999709129333
+    },
+    {
+      "id": "https://openalex.org/keywords/smiles",
+      "display_name": "SMILES",
+      "score": 0.9010000228881836
+    },
+    {
+      "id": "https://openalex.org/keywords/molecular-graph-representation",
+      "display_name": "molecular graph representation",
+      "score": 0.6850000023841858
+    },
+    {
+      "id": "https://openalex.org/keywords/glass-transition-temperature",
+      "display_name": "glass transition temperature",
+      "score": 0.7459999918937683
+    },
+    {
+      "id": "https://openalex.org/keywords/melting-point",
+      "display_name": "melting point",
+      "score": 0.972000002861023
+    },
+    {
+      "id": "https://openalex.org/keywords/polymer-density",
+      "display_name": "polymer density",
+      "score": 0.828000009059906
+    },
+    {
+      "id": "https://openalex.org/keywords/volume-resistivity",
+      "display_name": "volume resistivity",
+      "score": 0.9610000252723694
+    },
+    {
+      "id": "https://openalex.org/keywords/electrical-conductivity",
+      "display_name": "electrical conductivity",
+      "score": 0.9610000252723694
+    },
+    {
+      "id": "https://openalex.org/keywords/attention-analysis",
+      "display_name": "attention analysis",
+      "score": 0.7409999966621399
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C66322947",
+      "wikidata": "https://www.wikidata.org/wiki/Q11658",
+      "display_name": "Transformer",
+      "level": 3,
+      "score": 0.7941988706588745
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 0.6299931406974792
+    },
+    {
+      "id": "https://openalex.org/C521977710",
+      "wikidata": "https://www.wikidata.org/wiki/Q81163",
+      "display_name": "Polymer",
+      "level": 2,
+      "score": 0.5601128339767456
+    },
+    {
+      "id": "https://openalex.org/C131540310",
+      "wikidata": "https://www.wikidata.org/wiki/Q907564",
+      "display_name": "Conductivity",
+      "level": 2,
+      "score": 0.4454711079597473
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.3983646333217621
+    },
+    {
+      "id": "https://openalex.org/C186060115",
+      "wikidata": "https://www.wikidata.org/wiki/Q30336093",
+      "display_name": "Biological system",
+      "level": 1,
+      "score": 0.38614344596862793
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 0.1562056839466095
+    },
+    {
+      "id": "https://openalex.org/C165801399",
+      "wikidata": "https://www.wikidata.org/wiki/Q25428",
+      "display_name": "Voltage",
+      "level": 2,
+      "score": 0.14321836829185486
+    },
+    {
+      "id": "https://openalex.org/C159985019",
+      "wikidata": "https://www.wikidata.org/wiki/Q181790",
+      "display_name": "Composite material",
+      "level": 1,
+      "score": 0.11427989602088928
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.09554120898246765
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1021/acsami.4c01207",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1021/acsami.4c01207",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S164001016",
+        "display_name": "ACS Applied Materials & Interfaces",
+        "issn_l": "1944-8244",
+        "issn": [
+          "1944-8244",
+          "1944-8252"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "jufo-2",
+          "ki-jl-1",
+          "medline",
+          "norway-1"
+        ],
+        "host_organization": "https://openalex.org/P4310320006",
+        "host_organization_name": "American Chemical Society",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320006"
+        ],
+        "host_organization_lineage_names": [
+          "American Chemical Society"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "ACS Applied Materials &amp; Interfaces",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmid:38501934",
+      "is_oa": false,
+      "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38501934",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306525036",
+        "display_name": "PubMed",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_name": "National Institutes of Health",
+        "host_organization_lineage": [
+          "https://openalex.org/I1299303238"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "ACS applied materials & interfaces",
+      "raw_type": "Journal Article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [],
+  "study_designs": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 51,
+  "referenced_works": [
+    "https://openalex.org/W1975147762",
+    "https://openalex.org/W1983502066",
+    "https://openalex.org/W1988037271",
+    "https://openalex.org/W1991551390",
+    "https://openalex.org/W2030971064",
+    "https://openalex.org/W2092368765",
+    "https://openalex.org/W2116341502",
+    "https://openalex.org/W2170943742",
+    "https://openalex.org/W2481916066",
+    "https://openalex.org/W2754122850",
+    "https://openalex.org/W2778051509",
+    "https://openalex.org/W2883528235",
+    "https://openalex.org/W2908043757",
+    "https://openalex.org/W2911964244",
+    "https://openalex.org/W2932478038",
+    "https://openalex.org/W2947476638",
+    "https://openalex.org/W2952832141",
+    "https://openalex.org/W2964051877",
+    "https://openalex.org/W2976102057",
+    "https://openalex.org/W2980391166",
+    "https://openalex.org/W2981165461",
+    "https://openalex.org/W3006884899",
+    "https://openalex.org/W3090892334",
+    "https://openalex.org/W3095028680",
+    "https://openalex.org/W3096386116",
+    "https://openalex.org/W3104644561",
+    "https://openalex.org/W3114168740",
+    "https://openalex.org/W3129764520",
+    "https://openalex.org/W3139129996",
+    "https://openalex.org/W3180463990",
+    "https://openalex.org/W3207749172",
+    "https://openalex.org/W4210261876",
+    "https://openalex.org/W4282823776",
+    "https://openalex.org/W4292096737",
+    "https://openalex.org/W4306412556",
+    "https://openalex.org/W4308586705",
+    "https://openalex.org/W4318054387",
+    "https://openalex.org/W4320713584",
+    "https://openalex.org/W4320915618",
+    "https://openalex.org/W4324032752",
+    "https://openalex.org/W4366769286",
+    "https://openalex.org/W4379520927",
+    "https://openalex.org/W4383955629",
+    "https://openalex.org/W4385191492",
+    "https://openalex.org/W4385567183",
+    "https://openalex.org/W4386250621",
+    "https://openalex.org/W4387521449",
+    "https://openalex.org/W4387773384",
+    "https://openalex.org/W4389267611",
+    "https://openalex.org/W4391862446",
+    "https://openalex.org/W4398777692"
+  ],
+  "related_works": [
+    "https://openalex.org/W4246450666",
+    "https://openalex.org/W4388998267",
+    "https://openalex.org/W2898370298",
+    "https://openalex.org/W2137437058",
+    "https://openalex.org/W4390401159",
+    "https://openalex.org/W2744391499",
+    "https://openalex.org/W4230250635",
+    "https://openalex.org/W3041790586",
+    "https://openalex.org/W2018879842",
+    "https://openalex.org/W3144504424"
+  ],
+  "abstract_inverted_index": {
+    "In": [
+      0
+    ],
+    "this": [
+      1
+    ],
+    "work,": [
+      2,
+      133
+    ],
+    "we": [
+      3
+    ],
+    "designed": [
+      4
+    ],
+    "a": [
+      5,
+      147
+    ],
+    "multimodal": [
+      6,
+      51,
+      82,
+      140
+    ],
+    "transformer": [
+      7,
+      54,
+      83,
+      96
+    ],
+    "that": [
+      8,
+      80,
+      131
+    ],
+    "combines": [
+      9
+    ],
+    "both": [
+      10,
+      85
+    ],
+    "the": [
+      11,
+      25,
+      47,
+      81,
+      86,
+      89,
+      95,
+      118,
+      121,
+      126,
+      137
+    ],
+    "Simplified": [
+      12
+    ],
+    "Molecular": [
+      13
+    ],
+    "Input": [
+      14
+    ],
+    "Line": [
+      15
+    ],
+    "Entry": [
+      16
+    ],
+    "System": [
+      17
+    ],
+    "(SMILES)": [
+      18
+    ],
+    "and": [
+      19,
+      39,
+      77,
+      88,
+      125,
+      152
+    ],
+    "molecular": [
+      20
+    ],
+    "graph": [
+      21
+    ],
+    "representations": [
+      22
+    ],
+    "to": [
+      23,
+      45
+    ],
+    "enhance": [
+      24
+    ],
+    "prediction": [
+      26
+    ],
+    "of": [
+      27,
+      49,
+      139
+    ],
+    "polymer": [
+      28,
+      127,
+      144,
+      154
+    ],
+    "properties.": [
+      29,
+      103,
+      155
+    ],
+    "Three": [
+      30
+    ],
+    "models": [
+      31
+    ],
+    "with": [
+      32,
+      84
+    ],
+    "different": [
+      33
+    ],
+    "embeddings": [
+      34
+    ],
+    "(SMILES,": [
+      35
+    ],
+    "SMILES": [
+      36,
+      40,
+      87,
+      99
+    ],
+    "+": [
+      37,
+      41
+    ],
+    "monomer,": [
+      38
+    ],
+    "dimer)": [
+      42
+    ],
+    "were": [
+      43
+    ],
+    "employed": [
+      44
+    ],
+    "assess": [
+      46
+    ],
+    "performance": [
+      48
+    ],
+    "incorporating": [
+      50
+    ],
+    "features": [
+      52
+    ],
+    "into": [
+      53,
+      117
+    ],
+    "architectures.": [
+      55
+    ],
+    "Fine-tuning": [
+      56
+    ],
+    "results": [
+      57
+    ],
+    "across": [
+      58,
+      100
+    ],
+    "five": [
+      59,
+      102
+    ],
+    "properties": [
+      60
+    ],
+    "(i.e.,": [
+      61
+    ],
+    "density,": [
+      62
+    ],
+    "glass-transition": [
+      63
+    ],
+    "temperature": [
+      64,
+      70
+    ],
+    "(": [
+      65,
+      71
+    ],
+    "T": [
+      66,
+      72
+    ],
+    "g": [
+      67
+    ],
+    "),": [
+      68,
+      74
+    ],
+    "melting": [
+      69
+    ],
+    "m": [
+      73
+    ],
+    "volume": [
+      75
+    ],
+    "resistivity,": [
+      76
+    ],
+    "conductivity)": [
+      78
+    ],
+    "demonstrated": [
+      79
+    ],
+    "dimer": [
+      90
+    ],
+    "configuration": [
+      91
+    ],
+    "as": [
+      92
+    ],
+    "inputs": [
+      93
+    ],
+    "outperformed": [
+      94
+    ],
+    "using": [
+      97
+    ],
+    "only": [
+      98
+    ],
+    "all": [
+      101
+    ],
+    "Furthermore,": [
+      104
+    ],
+    "our": [
+      105,
+      132
+    ],
+    "model": [
+      106,
+      124
+    ],
+    "facilitates": [
+      107
+    ],
+    "in-depth": [
+      108
+    ],
+    "analysis": [
+      109
+    ],
+    "by": [
+      110
+    ],
+    "examining": [
+      111
+    ],
+    "attention": [
+      112
+    ],
+    "scores,": [
+      113
+    ],
+    "providing": [
+      114
+    ],
+    "deeper": [
+      115
+    ],
+    "insights": [
+      116
+    ],
+    "relationship": [
+      119
+    ],
+    "between": [
+      120
+    ],
+    "deep": [
+      122
+    ],
+    "learning": [
+      123
+    ],
+    "attributes.": [
+      128
+    ],
+    "We": [
+      129
+    ],
+    "believe": [
+      130
+    ],
+    "shedding": [
+      134
+    ],
+    "light": [
+      135
+    ],
+    "on": [
+      136
+    ],
+    "potential": [
+      138
+    ],
+    "transformers": [
+      141
+    ],
+    "in": [
+      142
+    ],
+    "predicting": [
+      143
+    ],
+    "properties,": [
+      145
+    ],
+    "paves": [
+      146
+    ],
+    "new": [
+      148
+    ],
+    "direction": [
+      149
+    ],
+    "for": [
+      150
+    ],
+    "understanding": [
+      151
+    ],
+    "refining": [
+      153
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 14
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 21
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-09-25T08:18:29.962427",
+  "created_date": "2025-10-10T00:00:00"
+}

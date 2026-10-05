@@ -1,0 +1,31 @@
+# Credentials and environments
+.venv/
+**/__pycache__/
+*.pyc
+.env
+.kaggle/
+
+# Downloaded Kaggle data and model/input caches (recreate with scripts)
+kaggle_inputs/
+kaggle_source/original_training/
+kaggle_source/original_infer/
+training/artifacts/tokens.npy
+training/artifacts/molformer.npy
+training/artifacts/morgan_2048_uint8.npy
+training/artifacts/augmentation_bank.json
+training/results/**/fold_*/model.pt
+training/results/**/fold_*/select_latest.pt
+training/results/**/fold_*/refit_latest.pt
+training/results/**/fold_*/select_best.pt
+training/results/**/*.pt
+training/*.log
+training/results/*.log
+external_baselines/*.log
+external_baselines/bioplastic_design/
+external_baselines/chen_rnn_tg/.git/
+
+# Temporary/build files
+*.tmp
+*.part
+*.zip
+.DS_Store

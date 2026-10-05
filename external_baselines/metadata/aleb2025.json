@@ -1,0 +1,578 @@
+{
+  "id": "https://openalex.org/W4405199278",
+  "doi": "https://doi.org/10.1007/s00521-024-10532-4",
+  "title": "TransTg: a new transformer model for predicting glass transition temperature of polymers from monomers\u2019 molecular structures",
+  "display_name": "TransTg: a new transformer model for predicting glass transition temperature of polymers from monomers\u2019 molecular structures",
+  "publication_year": 2024,
+  "publication_date": "2024-12-09",
+  "ids": {
+    "openalex": "https://openalex.org/W4405199278",
+    "doi": "https://doi.org/10.1007/s00521-024-10532-4"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1007/s00521-024-10532-4",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1007/s00521-024-10532-4",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S147897268",
+      "display_name": "Neural Computing and Applications",
+      "issn_l": "0941-0643",
+      "issn": [
+        "0941-0643",
+        "1433-3058"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "jufo-1",
+        "ki-jl-1",
+        "norway-1"
+      ],
+      "host_organization": "https://openalex.org/P4310319900",
+      "host_organization_name": "Springer Science+Business Media",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310319900",
+        "https://openalex.org/P4310319965"
+      ],
+      "host_organization_lineage_names": [
+        "Springer Science+Business Media",
+        "Springer Nature"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Neural Computing and Applications",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5038610582",
+        "display_name": "Nassima Aleb",
+        "orcid": "https://orcid.org/0000-0001-6386-949X",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-6386-949X"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I82401606",
+          "display_name": "Jubail Industrial College",
+          "ror": "https://ror.org/01rw40d12",
+          "country_code": "SA",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I82401606"
+          ]
+        }
+      ],
+      "countries": [
+        "SA"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Nassima Aleb",
+      "raw_affiliation_strings": [
+        "Computer and Information Technology Department, Jubail Industrial College, Jubail Industrial City, 31961, Al Jubail, Saudi Arabia",
+        "Computer and Information Technology Department, Jubail Industrial College, Jubail Industrial City, Al Jubail, Saudi Arabia"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-6386-949X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Computer and Information Technology Department, Jubail Industrial College, Jubail Industrial City, 31961, Al Jubail, Saudi Arabia",
+          "institution_ids": [
+            "https://openalex.org/I82401606"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Computer and Information Technology Department, Jubail Industrial College, Jubail Industrial City, Al Jubail, Saudi Arabia",
+          "institution_ids": [
+            "https://openalex.org/I82401606"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5008315887",
+        "display_name": "Nedal Y. Abu-Thabit",
+        "orcid": "https://orcid.org/0000-0002-3025-1578",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-3025-1578"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I82401606",
+          "display_name": "Jubail Industrial College",
+          "ror": "https://ror.org/01rw40d12",
+          "country_code": "SA",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I82401606"
+          ]
+        }
+      ],
+      "countries": [
+        "SA"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Nedal Y. Abu-Thabit",
+      "raw_affiliation_strings": [
+        "Department of Chemical Engineering, Jubail Industrial College, Jubail Industrial City, 31961, Al Jubail, Saudi Arabia",
+        "Department of Chemical Engineering, Jubail Industrial College, Jubail Industrial City, Al Jubail, Saudi Arabia"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Chemical Engineering, Jubail Industrial College, Jubail Industrial City, 31961, Al Jubail, Saudi Arabia",
+          "institution_ids": [
+            "https://openalex.org/I82401606"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Department of Chemical Engineering, Jubail Industrial College, Jubail Industrial City, Al Jubail, Saudi Arabia",
+          "institution_ids": [
+            "https://openalex.org/I82401606"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5008315887",
+    "https://openalex.org/A5038610582"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I82401606"
+  ],
+  "apc_list": {
+    "value": 3190,
+    "currency": "USD",
+    "value_usd": 3190
+  },
+  "apc_paid": null,
+  "fwci": 1.3245,
+  "has_fulltext": false,
+  "cited_by_count": 12,
+  "citation_normalized_percentile": {
+    "value": 0.77286814,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 97,
+    "max": 99
+  },
+  "biblio": {
+    "volume": "37",
+    "issue": "4",
+    "first_page": "2733",
+    "last_page": "2746"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10389",
+    "display_name": "Polymer crystallization and properties",
+    "score": 0.9890000224113464,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2507",
+      "display_name": "Polymers and Plastics"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/25",
+      "display_name": "Materials Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10389",
+      "display_name": "Polymer crystallization and properties",
+      "score": 0.9890000224113464,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2507",
+        "display_name": "Polymers and Plastics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11948",
+      "display_name": "Machine Learning in Materials Science",
+      "score": 0.9812999963760376,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2505",
+        "display_name": "Materials Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12358",
+      "display_name": "Thermal and Kinetic Analysis",
+      "score": 0.9793999791145325,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2505",
+        "display_name": "Materials Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/glass-transition-temperature",
+      "display_name": "glass transition temperature",
+      "score": 0.8629999756813049
+    },
+    {
+      "id": "https://openalex.org/keywords/polymer-property-prediction",
+      "display_name": "polymer property prediction",
+      "score": 0.777999997138977
+    },
+    {
+      "id": "https://openalex.org/keywords/transformer",
+      "display_name": "transformer models",
+      "score": 0.6380000114440918
+    },
+    {
+      "id": "https://openalex.org/keywords/self-attention",
+      "display_name": "self-attention",
+      "score": 0.7059999704360962
+    },
+    {
+      "id": "https://openalex.org/keywords/structure-property-relationships",
+      "display_name": "structure-property relationships",
+      "score": 0.6539999842643738
+    },
+    {
+      "id": "https://openalex.org/keywords/quantitative-structure-property-relationship",
+      "display_name": "QSPR",
+      "score": 0.6629999876022339
+    },
+    {
+      "id": "https://openalex.org/keywords/chemical-language-models",
+      "display_name": "chemical language models",
+      "score": 0.546999990940094
+    },
+    {
+      "id": "https://openalex.org/keywords/model-interpretability",
+      "display_name": "model interpretability",
+      "score": 0.5849999785423279
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C122865956",
+      "wikidata": "https://www.wikidata.org/wiki/Q825643",
+      "display_name": "Glass transition",
+      "level": 3,
+      "score": 0.8032630085945129
+    },
+    {
+      "id": "https://openalex.org/C68597687",
+      "wikidata": "https://www.wikidata.org/wiki/Q362601",
+      "display_name": "Computational Science and Engineering",
+      "level": 2,
+      "score": 0.7177769541740417
+    },
+    {
+      "id": "https://openalex.org/C521977710",
+      "wikidata": "https://www.wikidata.org/wiki/Q81163",
+      "display_name": "Polymer",
+      "level": 2,
+      "score": 0.6921744346618652
+    },
+    {
+      "id": "https://openalex.org/C166940927",
+      "wikidata": "https://www.wikidata.org/wiki/Q178827",
+      "display_name": "Monomer",
+      "level": 3,
+      "score": 0.653905987739563
+    },
+    {
+      "id": "https://openalex.org/C66322947",
+      "wikidata": "https://www.wikidata.org/wiki/Q11658",
+      "display_name": "Transformer",
+      "level": 3,
+      "score": 0.5940417051315308
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 0.528042197227478
+    },
+    {
+      "id": "https://openalex.org/C159467904",
+      "wikidata": "https://www.wikidata.org/wiki/Q2001702",
+      "display_name": "Chemical physics",
+      "level": 1,
+      "score": 0.3599141240119934
+    },
+    {
+      "id": "https://openalex.org/C97355855",
+      "wikidata": "https://www.wikidata.org/wiki/Q11473",
+      "display_name": "Thermodynamics",
+      "level": 1,
+      "score": 0.3565700650215149
+    },
+    {
+      "id": "https://openalex.org/C126348684",
+      "wikidata": "https://www.wikidata.org/wiki/Q3456979",
+      "display_name": "Polymer science",
+      "level": 1,
+      "score": 0.35368213057518005
+    },
+    {
+      "id": "https://openalex.org/C121864883",
+      "wikidata": "https://www.wikidata.org/wiki/Q677916",
+      "display_name": "Statistical physics",
+      "level": 1,
+      "score": 0.35040056705474854
+    },
+    {
+      "id": "https://openalex.org/C159985019",
+      "wikidata": "https://www.wikidata.org/wiki/Q181790",
+      "display_name": "Composite material",
+      "level": 1,
+      "score": 0.33986616134643555
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.31948184967041016
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 0.21758142113685608
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.1664249300956726
+    },
+    {
+      "id": "https://openalex.org/C119857082",
+      "wikidata": "https://www.wikidata.org/wiki/Q2539",
+      "display_name": "Machine learning",
+      "level": 1,
+      "score": 0.11467015743255615
+    },
+    {
+      "id": "https://openalex.org/C165801399",
+      "wikidata": "https://www.wikidata.org/wiki/Q25428",
+      "display_name": "Voltage",
+      "level": 2,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1007/s00521-024-10532-4",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1007/s00521-024-10532-4",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S147897268",
+        "display_name": "Neural Computing and Applications",
+        "issn_l": "0941-0643",
+        "issn": [
+          "0941-0643",
+          "1433-3058"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "jufo-1",
+          "ki-jl-1",
+          "norway-1"
+        ],
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_name": "Springer Science+Business Media",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Neural Computing and Applications",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [
+    {
+      "id": "https://metadata.un.org/sdg/7",
+      "display_name": "Affordable and clean energy",
+      "score": 0.47999998927116394
+    }
+  ],
+  "study_designs": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 56,
+  "referenced_works": [
+    "https://openalex.org/W1969354909",
+    "https://openalex.org/W1998433988",
+    "https://openalex.org/W2005689554",
+    "https://openalex.org/W2041796392",
+    "https://openalex.org/W2053270059",
+    "https://openalex.org/W2057872356",
+    "https://openalex.org/W2083540345",
+    "https://openalex.org/W2138789925",
+    "https://openalex.org/W2315837940",
+    "https://openalex.org/W2331143823",
+    "https://openalex.org/W2628805469",
+    "https://openalex.org/W2794948017",
+    "https://openalex.org/W2883528235",
+    "https://openalex.org/W2899673112",
+    "https://openalex.org/W2904181725",
+    "https://openalex.org/W2954839056",
+    "https://openalex.org/W2999847078",
+    "https://openalex.org/W3002212680",
+    "https://openalex.org/W3004417314",
+    "https://openalex.org/W3005714846",
+    "https://openalex.org/W3010244463",
+    "https://openalex.org/W3022711947",
+    "https://openalex.org/W3023042104",
+    "https://openalex.org/W3025867971",
+    "https://openalex.org/W3043694802",
+    "https://openalex.org/W3092573217",
+    "https://openalex.org/W3098348909",
+    "https://openalex.org/W3100838174",
+    "https://openalex.org/W3121952694",
+    "https://openalex.org/W3126878921",
+    "https://openalex.org/W3127298458",
+    "https://openalex.org/W3137936583",
+    "https://openalex.org/W3142188241",
+    "https://openalex.org/W3153418077",
+    "https://openalex.org/W3164743754",
+    "https://openalex.org/W3165831121",
+    "https://openalex.org/W3174717284",
+    "https://openalex.org/W3176923149",
+    "https://openalex.org/W3197302956",
+    "https://openalex.org/W3207749172",
+    "https://openalex.org/W3209036114",
+    "https://openalex.org/W4312129726",
+    "https://openalex.org/W4318817523",
+    "https://openalex.org/W4366769286",
+    "https://openalex.org/W4366960332",
+    "https://openalex.org/W4383955629",
+    "https://openalex.org/W4383982233",
+    "https://openalex.org/W4387226482",
+    "https://openalex.org/W4389374230",
+    "https://openalex.org/W4390731569",
+    "https://openalex.org/W4392893169",
+    "https://openalex.org/W4393194247",
+    "https://openalex.org/W4394716898",
+    "https://openalex.org/W4394725461",
+    "https://openalex.org/W4399322969",
+    "https://openalex.org/W4401558372"
+  ],
+  "related_works": [
+    "https://openalex.org/W2357692583",
+    "https://openalex.org/W4393232657",
+    "https://openalex.org/W2045488530",
+    "https://openalex.org/W4390638272",
+    "https://openalex.org/W4387781933",
+    "https://openalex.org/W2166401955",
+    "https://openalex.org/W2045468340",
+    "https://openalex.org/W2374513464",
+    "https://openalex.org/W2065054208",
+    "https://openalex.org/W1979677112"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 8
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 4
+    }
+  ],
+  "updated_date": "2026-09-25T08:18:29.962427",
+  "created_date": "2025-10-10T00:00:00"
+}

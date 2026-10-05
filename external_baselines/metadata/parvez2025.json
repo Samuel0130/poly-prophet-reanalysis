@@ -1,0 +1,1465 @@
+{
+  "id": "https://openalex.org/W4411830038",
+  "doi": "https://doi.org/10.3390/polym17131801",
+  "title": "High-Accuracy Polymer Property Detection via Pareto-Optimized SMILES-Based Deep Learning",
+  "display_name": "High-Accuracy Polymer Property Detection via Pareto-Optimized SMILES-Based Deep Learning",
+  "publication_year": 2025,
+  "publication_date": "2025-06-28",
+  "ids": {
+    "openalex": "https://openalex.org/W4411830038",
+    "doi": "https://doi.org/10.3390/polym17131801",
+    "pmid": "https://pubmed.ncbi.nlm.nih.gov/40647811"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.3390/polym17131801",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.3390/polym17131801",
+    "pdf_url": "https://www.mdpi.com/2073-4360/17/13/1801/pdf?version=1751094267",
+    "source": {
+      "id": "https://openalex.org/S123288148",
+      "display_name": "Polymers",
+      "issn_l": "2073-4360",
+      "issn": [
+        "2073-4360"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "norway-1"
+      ],
+      "host_organization": "https://openalex.org/P4310310987",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310310987"
+      ],
+      "host_organization_lineage_names": [
+        "Multidisciplinary Digital Publishing Institute"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Polymers",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref",
+    "pubmed"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "gold",
+    "oa_url": "https://www.mdpi.com/2073-4360/17/13/1801/pdf?version=1751094267",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5080935193",
+        "display_name": "Mohammad Anwar Parvez",
+        "orcid": "https://orcid.org/0000-0001-6388-901X",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-6388-901X"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4626487",
+          "display_name": "King Faisal University",
+          "ror": "https://ror.org/00dn43547",
+          "country_code": "SA",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4626487"
+          ]
+        }
+      ],
+      "countries": [
+        "SA"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Mohammad Anwar Parvez",
+      "raw_affiliation_strings": [
+        "Department of Chemical Engineering, College of Engineering, King Faisal University, Al-Ahsa 31982, Saudi Arabia"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-6388-901X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Chemical Engineering, College of Engineering, King Faisal University, Al-Ahsa 31982, Saudi Arabia",
+          "institution_ids": [
+            "https://openalex.org/I4626487"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5015412445",
+        "display_name": "Ibrahim Mustafa Mehedi",
+        "orcid": "https://orcid.org/0000-0001-8073-9750",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-8073-9750"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I69356397",
+          "display_name": "Xi\u2019an Jiaotong-Liverpool University",
+          "ror": "https://ror.org/03zmrmn05",
+          "country_code": "CN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I69356397"
+          ]
+        }
+      ],
+      "countries": [
+        "CN"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Ibrahim M. Mehedi",
+      "raw_affiliation_strings": [
+        "School of Robotics, XJTLU Entrepreneur College (Taicang), Xi\u2019an Jiaotong-Liverpool University, No. 111 Taicang Ave., Taicang, Suzhou 215400, China"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-8073-9750",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "School of Robotics, XJTLU Entrepreneur College (Taicang), Xi\u2019an Jiaotong-Liverpool University, No. 111 Taicang Ave., Taicang, Suzhou 215400, China",
+          "institution_ids": [
+            "https://openalex.org/I69356397"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 2,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5015412445",
+    "https://openalex.org/A5080935193"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I4626487",
+    "https://openalex.org/I69356397"
+  ],
+  "apc_list": {
+    "value": 2700,
+    "currency": "CHF",
+    "value_usd": 3258
+  },
+  "apc_paid": {
+    "value": 2700,
+    "currency": "CHF",
+    "value_usd": 3258
+  },
+  "fwci": 1.2631,
+  "has_fulltext": true,
+  "cited_by_count": 6,
+  "citation_normalized_percentile": {
+    "value": 0.77610887,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 94,
+    "max": 99
+  },
+  "biblio": {
+    "volume": "17",
+    "issue": "13",
+    "first_page": "1801",
+    "last_page": "1801"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11948",
+    "display_name": "Machine Learning in Materials Science",
+    "score": 0.9975000023841858,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2505",
+      "display_name": "Materials Chemistry"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/25",
+      "display_name": "Materials Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11948",
+      "display_name": "Machine Learning in Materials Science",
+      "score": 0.9975000023841858,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2505",
+        "display_name": "Materials Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10211",
+      "display_name": "Computational Drug Discovery Methods",
+      "score": 0.9660000205039978,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1703",
+        "display_name": "Computational Theory and Mathematics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12111",
+      "display_name": "Industrial Vision Systems and Defect Detection",
+      "score": 0.9289000034332275,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2209",
+        "display_name": "Industrial and Manufacturing Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/smiles",
+      "display_name": "SMILES",
+      "score": 0.7860000133514404
+    },
+    {
+      "id": "https://openalex.org/keywords/multi-objective-optimization",
+      "display_name": "multi-objective optimization",
+      "score": 0.8569999933242798
+    },
+    {
+      "id": "https://openalex.org/keywords/hyperparameter-optimization",
+      "display_name": "hyperparameter optimization",
+      "score": 0.8989999890327454
+    },
+    {
+      "id": "https://openalex.org/keywords/1d-convolutional-neural-network",
+      "display_name": "1D convolutional neural network",
+      "score": 0.902999997138977
+    },
+    {
+      "id": "https://openalex.org/keywords/gated-recurrent-unit",
+      "display_name": "gated recurrent unit",
+      "score": 0.9959999918937683
+    },
+    {
+      "id": "https://openalex.org/keywords/polymer-informatics",
+      "display_name": "polymer informatics",
+      "score": 0.7179999947547913
+    },
+    {
+      "id": "https://openalex.org/keywords/materials-design",
+      "display_name": "materials design",
+      "score": 0.5230000019073486
+    },
+    {
+      "id": "https://openalex.org/keywords/chemical-property-prediction",
+      "display_name": "chemical property prediction",
+      "score": 0.6190000176429749
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.7040500640869141
+    },
+    {
+      "id": "https://openalex.org/C108583219",
+      "wikidata": "https://www.wikidata.org/wiki/Q197536",
+      "display_name": "Deep learning",
+      "level": 2,
+      "score": 0.6398879289627075
+    },
+    {
+      "id": "https://openalex.org/C81363708",
+      "wikidata": "https://www.wikidata.org/wiki/Q17084460",
+      "display_name": "Convolutional neural network",
+      "level": 2,
+      "score": 0.5977287292480469
+    },
+    {
+      "id": "https://openalex.org/C154945302",
+      "wikidata": "https://www.wikidata.org/wiki/Q11660",
+      "display_name": "Artificial intelligence",
+      "level": 1,
+      "score": 0.5623821020126343
+    },
+    {
+      "id": "https://openalex.org/C48044578",
+      "wikidata": "https://www.wikidata.org/wiki/Q727490",
+      "display_name": "Scalability",
+      "level": 2,
+      "score": 0.5044518709182739
+    },
+    {
+      "id": "https://openalex.org/C119857082",
+      "wikidata": "https://www.wikidata.org/wiki/Q2539",
+      "display_name": "Machine learning",
+      "level": 1,
+      "score": 0.498582124710083
+    },
+    {
+      "id": "https://openalex.org/C99726746",
+      "wikidata": "https://www.wikidata.org/wiki/Q906396",
+      "display_name": "Chemical space",
+      "level": 3,
+      "score": 0.4406417906284332
+    },
+    {
+      "id": "https://openalex.org/C62085286",
+      "wikidata": "https://www.wikidata.org/wiki/Q6786605",
+      "display_name": "Materials informatics",
+      "level": 5,
+      "score": 0.42720139026641846
+    },
+    {
+      "id": "https://openalex.org/C189950617",
+      "wikidata": "https://www.wikidata.org/wiki/Q937228",
+      "display_name": "Property (philosophy)",
+      "level": 2,
+      "score": 0.42709124088287354
+    },
+    {
+      "id": "https://openalex.org/C74187038",
+      "wikidata": "https://www.wikidata.org/wiki/Q1418791",
+      "display_name": "Drug discovery",
+      "level": 2,
+      "score": 0.12283211946487427
+    },
+    {
+      "id": "https://openalex.org/C158518442",
+      "wikidata": "https://www.wikidata.org/wiki/Q2843902",
+      "display_name": "Engineering informatics",
+      "level": 4,
+      "score": 0.12066265940666199
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 0.10108029842376709
+    },
+    {
+      "id": "https://openalex.org/C77088390",
+      "wikidata": "https://www.wikidata.org/wiki/Q8513",
+      "display_name": "Database",
+      "level": 1,
+      "score": 0.08817920088768005
+    },
+    {
+      "id": "https://openalex.org/C111472728",
+      "wikidata": "https://www.wikidata.org/wiki/Q9471",
+      "display_name": "Epistemology",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C138885662",
+      "wikidata": "https://www.wikidata.org/wiki/Q5891",
+      "display_name": "Philosophy",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C145642194",
+      "wikidata": "https://www.wikidata.org/wiki/Q870895",
+      "display_name": "Health informatics",
+      "level": 3,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C55493867",
+      "wikidata": "https://www.wikidata.org/wiki/Q7094",
+      "display_name": "Biochemistry",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C138816342",
+      "wikidata": "https://www.wikidata.org/wiki/Q189603",
+      "display_name": "Public health",
+      "level": 2,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C159110408",
+      "wikidata": "https://www.wikidata.org/wiki/Q121176",
+      "display_name": "Nursing",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "doi:10.3390/polym17131801",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.3390/polym17131801",
+      "pdf_url": "https://www.mdpi.com/2073-4360/17/13/1801/pdf?version=1751094267",
+      "source": {
+        "id": "https://openalex.org/S123288148",
+        "display_name": "Polymers",
+        "issn_l": "2073-4360",
+        "issn": [
+          "2073-4360"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "norway-1"
+        ],
+        "host_organization": "https://openalex.org/P4310310987",
+        "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310310987"
+        ],
+        "host_organization_lineage_names": [
+          "Multidisciplinary Digital Publishing Institute"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Polymers",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmid:40647811",
+      "is_oa": false,
+      "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40647811",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306525036",
+        "display_name": "PubMed",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_name": "National Institutes of Health",
+        "host_organization_lineage": [
+          "https://openalex.org/I1299303238"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Polymers",
+      "raw_type": "Journal Article"
+    },
+    {
+      "id": "pmh:oai:pubmedcentral.nih.gov:12252347",
+      "is_oa": true,
+      "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12252347",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S2764455111",
+        "display_name": "PubMed Central",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_name": "National Institutes of Health",
+        "host_organization_lineage": [
+          "https://openalex.org/I1299303238"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "Polymers (Basel)",
+      "raw_type": "Text"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.3390/polym17131801",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.3390/polym17131801",
+    "pdf_url": "https://www.mdpi.com/2073-4360/17/13/1801/pdf?version=1751094267",
+    "source": {
+      "id": "https://openalex.org/S123288148",
+      "display_name": "Polymers",
+      "issn_l": "2073-4360",
+      "issn": [
+        "2073-4360"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "norway-1"
+      ],
+      "host_organization": "https://openalex.org/P4310310987",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310310987"
+      ],
+      "host_organization_lineage_names": [
+        "Multidisciplinary Digital Publishing Institute"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Polymers",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [
+    {
+      "score": 0.5299999713897705,
+      "id": "https://metadata.un.org/sdg/9",
+      "display_name": "Industry, innovation and infrastructure"
+    }
+  ],
+  "study_designs": [],
+  "awards": [],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320331156",
+      "display_name": "King Faisal University",
+      "ror": null
+    }
+  ],
+  "has_content": {
+    "grobid_xml": true,
+    "pdf": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W4411830038.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W4411830038.grobid-xml"
+  },
+  "referenced_works_count": 23,
+  "referenced_works": [
+    "https://openalex.org/W2794868736",
+    "https://openalex.org/W2801575905",
+    "https://openalex.org/W3007670510",
+    "https://openalex.org/W3014537856",
+    "https://openalex.org/W3015544413",
+    "https://openalex.org/W3087167818",
+    "https://openalex.org/W3092248103",
+    "https://openalex.org/W3126331913",
+    "https://openalex.org/W3190442594",
+    "https://openalex.org/W3216406626",
+    "https://openalex.org/W4210261876",
+    "https://openalex.org/W4220738523",
+    "https://openalex.org/W4311202678",
+    "https://openalex.org/W4401025861",
+    "https://openalex.org/W4402990538",
+    "https://openalex.org/W4403866364",
+    "https://openalex.org/W4403876661",
+    "https://openalex.org/W4405790818",
+    "https://openalex.org/W4406047913",
+    "https://openalex.org/W4406208710",
+    "https://openalex.org/W4406335044",
+    "https://openalex.org/W4406603407",
+    "https://openalex.org/W6876285304"
+  ],
+  "related_works": [
+    "https://openalex.org/W2902857455",
+    "https://openalex.org/W2161782568",
+    "https://openalex.org/W4212982662",
+    "https://openalex.org/W4226062292",
+    "https://openalex.org/W4281772408",
+    "https://openalex.org/W2078293348",
+    "https://openalex.org/W4226493464",
+    "https://openalex.org/W3133861977",
+    "https://openalex.org/W2951211570",
+    "https://openalex.org/W3103566983"
+  ],
+  "abstract_inverted_index": {
+    "Polymers": [
+      0
+    ],
+    "have": [
+      1,
+      31
+    ],
+    "a": [
+      2,
+      97,
+      134,
+      156,
+      171,
+      178,
+      216,
+      230,
+      268,
+      330
+    ],
+    "wide": [
+      3
+    ],
+    "range": [
+      4
+    ],
+    "of": [
+      5,
+      51,
+      59,
+      106,
+      255,
+      279,
+      322,
+      344
+    ],
+    "applications": [
+      6
+    ],
+    "in": [
+      7,
+      78,
+      103,
+      262,
+      304,
+      324
+    ],
+    "materials": [
+      8,
+      53,
+      67,
+      92,
+      107,
+      334
+    ],
+    "science,": [
+      9
+    ],
+    "chemistry,": [
+      10
+    ],
+    "and": [
+      11,
+      26,
+      54,
+      62,
+      65,
+      88,
+      109,
+      113,
+      124,
+      132,
+      145,
+      183,
+      197,
+      211,
+      218,
+      235,
+      260,
+      293,
+      314,
+      336
+    ],
+    "biomedical": [
+      12
+    ],
+    "domains.": [
+      13
+    ],
+    "Conventional": [
+      14
+    ],
+    "design": [
+      15,
+      57,
+      68,
+      93,
+      131
+    ],
+    "methods": [
+      16,
+      115,
+      310
+    ],
+    "for": [
+      17,
+      121,
+      162,
+      221,
+      241,
+      333
+    ],
+    "polymers": [
+      18,
+      61
+    ],
+    "are": [
+      19,
+      42,
+      116
+    ],
+    "mostly": [
+      20
+    ],
+    "event-oriented,": [
+      21
+    ],
+    "directed": [
+      22
+    ],
+    "by": [
+      23
+    ],
+    "intuition,": [
+      24
+    ],
+    "experience,": [
+      25
+    ],
+    "abstract": [
+      27
+    ],
+    "insights.": [
+      28
+    ],
+    "Nevertheless,": [
+      29
+    ],
+    "they": [
+      30
+    ],
+    "been": [
+      32
+    ],
+    "effectively": [
+      33
+    ],
+    "utilized": [
+      34
+    ],
+    "to": [
+      35,
+      47,
+      73,
+      100,
+      118,
+      206,
+      350
+    ],
+    "determine": [
+      36
+    ],
+    "several": [
+      37
+    ],
+    "essential": [
+      38
+    ],
+    "materials;": [
+      39
+    ],
+    "these": [
+      40,
+      74
+    ],
+    "techniques": [
+      41
+    ],
+    "facing": [
+      43
+    ],
+    "important": [
+      44
+    ],
+    "challenges": [
+      45
+    ],
+    "owing": [
+      46
+    ],
+    "the": [
+      48,
+      55,
+      70,
+      185,
+      190,
+      225,
+      242,
+      246,
+      252,
+      256,
+      320,
+      342,
+      345
+    ],
+    "great": [
+      49
+    ],
+    "requirement": [
+      50
+    ],
+    "original": [
+      52
+    ],
+    "huge": [
+      56
+    ],
+    "area": [
+      58
+    ],
+    "organic": [
+      60
+    ],
+    "molecules.": [
+      63
+    ],
+    "Enhanced": [
+      64
+    ],
+    "inverse": [
+      66
+    ],
+    "is": [
+      69,
+      94,
+      204
+    ],
+    "best": [
+      71
+    ],
+    "solution": [
+      72,
+      220
+    ],
+    "challenges.": [
+      75
+    ],
+    "With": [
+      76
+    ],
+    "developments": [
+      77
+    ],
+    "high-performing": [
+      79
+    ],
+    "calculations,": [
+      80
+    ],
+    "artificial": [
+      81
+    ],
+    "intelligence": [
+      82
+    ],
+    "(AI)": [
+      83
+    ],
+    "(particularly": [
+      84
+    ],
+    "Deep": [
+      85
+    ],
+    "learning": [
+      86,
+      90,
+      159
+    ],
+    "(DL)": [
+      87
+    ],
+    "Machine": [
+      89
+    ],
+    "(ML))-aided": [
+      91
+    ],
+    "developing": [
+      95
+    ],
+    "as": [
+      96,
+      312
+    ],
+    "promising": [
+      98,
+      331
+    ],
+    "tool": [
+      99
+    ],
+    "show": [
+      101,
+      271
+    ],
+    "development": [
+      102
+    ],
+    "various": [
+      104
+    ],
+    "domains": [
+      105
+    ],
+    "science": [
+      108,
+      335
+    ],
+    "engineering.": [
+      110,
+      337
+    ],
+    "Several": [
+      111
+    ],
+    "ML": [
+      112
+    ],
+    "DL": [
+      114
+    ],
+    "established": [
+      117,
+      309
+    ],
+    "perform": [
+      119
+    ],
+    "well": [
+      120
+    ],
+    "polymer": [
+      122,
+      163,
+      222,
+      287,
+      325
+    ],
+    "classification": [
+      123,
+      165,
+      195,
+      243,
+      264,
+      277
+    ],
+    "detection": [
+      125
+    ],
+    "presently.": [
+      126
+    ],
+    "In": [
+      127
+    ],
+    "this": [
+      128
+    ],
+    "paper,": [
+      129
+    ],
+    "we": [
+      130
+    ],
+    "develop": [
+      133
+    ],
+    "Simplified": [
+      135
+    ],
+    "Molecular": [
+      136
+    ],
+    "Input": [
+      137
+    ],
+    "Line": [
+      138
+    ],
+    "Entry": [
+      139
+    ],
+    "System": [
+      140
+    ],
+    "Based": [
+      141
+    ],
+    "Polymer": [
+      142
+    ],
+    "Property": [
+      143
+    ],
+    "Detection": [
+      144
+    ],
+    "Classification": [
+      146
+    ],
+    "Using": [
+      147
+    ],
+    "Pareto": [
+      148,
+      188,
+      247
+    ],
+    "Optimization": [
+      149
+    ],
+    "Algorithm": [
+      150
+    ],
+    "(SMILES-PPDCPOA)": [
+      151
+    ],
+    "model.": [
+      152
+    ],
+    "This": [
+      153
+    ],
+    "study": [
+      154
+    ],
+    "presents": [
+      155
+    ],
+    "novel": [
+      157
+    ],
+    "deep": [
+      158
+    ],
+    "framework": [
+      160
+    ],
+    "tailored": [
+      161
+    ],
+    "property": [
+      164,
+      288,
+      326
+    ],
+    "using": [
+      166
+    ],
+    "SMILES": [
+      167
+    ],
+    "input.": [
+      168
+    ],
+    "By": [
+      169
+    ],
+    "integrating": [
+      170
+    ],
+    "one-dimensional": [
+      172,
+      231
+    ],
+    "convolutional": [
+      173,
+      232
+    ],
+    "neural": [
+      174,
+      233
+    ],
+    "network": [
+      175,
+      234
+    ],
+    "(1DCNN)": [
+      176
+    ],
+    "with": [
+      177,
+      290
+    ],
+    "gated": [
+      179,
+      236
+    ],
+    "recurrent": [
+      180,
+      237
+    ],
+    "unit": [
+      181,
+      238
+    ],
+    "(GRU)": [
+      182
+    ],
+    "optimizing": [
+      184
+    ],
+    "model": [
+      186,
+      192,
+      203,
+      228
+    ],
+    "via": [
+      187
+    ],
+    "Optimization,": [
+      189
+    ],
+    "SMILES-PPDCPOA": [
+      191,
+      227,
+      273,
+      323,
+      346
+    ],
+    "demonstrates": [
+      193,
+      298
+    ],
+    "superior": [
+      194,
+      299
+    ],
+    "accuracy": [
+      196,
+      278
+    ],
+    "generalization.": [
+      198
+    ],
+    "Unlike": [
+      199
+    ],
+    "existing": [
+      200,
+      352
+    ],
+    "methods,": [
+      201
+    ],
+    "our": [
+      202
+    ],
+    "designed": [
+      205
+    ],
+    "capture": [
+      207
+    ],
+    "both": [
+      208
+    ],
+    "local": [
+      209
+    ],
+    "substructures": [
+      210
+    ],
+    "long-range": [
+      212
+    ],
+    "chemical": [
+      213
+    ],
+    "dependencies,": [
+      214
+    ],
+    "offering": [
+      215
+    ],
+    "scalable": [
+      217
+    ],
+    "domain-specific": [
+      219
+    ],
+    "informatics.": [
+      223
+    ],
+    "Furthermore,": [
+      224
+    ],
+    "proposed": [
+      226
+    ],
+    "executes": [
+      229
+    ],
+    "(1DCNN-GRU)": [
+      239
+    ],
+    "technique": [
+      240
+    ],
+    "process.": [
+      244
+    ],
+    "Finally,": [
+      245
+    ],
+    "optimization": [
+      248
+    ],
+    "algorithm": [
+      249,
+      258
+    ],
+    "(POA)": [
+      250
+    ],
+    "adjusts": [
+      251
+    ],
+    "hyperparameter": [
+      253
+    ],
+    "values": [
+      254
+    ],
+    "1DCNN-GRU": [
+      257
+    ],
+    "optimally": [
+      259
+    ],
+    "results": [
+      261
+    ],
+    "greater": [
+      263
+    ],
+    "performance.": [
+      265
+    ],
+    "Results": [
+      266
+    ],
+    "on": [
+      267
+    ],
+    "benchmark": [
+      269
+    ],
+    "dataset": [
+      270
+    ],
+    "that": [
+      272
+    ],
+    "achieves": [
+      274
+    ],
+    "an": [
+      275
+    ],
+    "average": [
+      276
+    ],
+    "98.66%": [
+      280
+    ],
+    "(70%": [
+      281
+    ],
+    "Training,": [
+      282
+    ],
+    "30%": [
+      283
+    ],
+    "Testing)": [
+      284
+    ],
+    "across": [
+      285
+    ],
+    "eight": [
+      286
+    ],
+    "classes,": [
+      289
+    ],
+    "high": [
+      291
+    ],
+    "precision": [
+      292
+    ],
+    "recall": [
+      294
+    ],
+    "metrics.": [
+      295
+    ],
+    "Additionally,": [
+      296
+    ],
+    "it": [
+      297,
+      329
+    ],
+    "computational": [
+      300
+    ],
+    "efficiency,": [
+      301
+    ],
+    "completing": [
+      302
+    ],
+    "tasks": [
+      303
+    ],
+    "4.97": [
+      305
+    ],
+    "s,": [
+      306
+    ],
+    "outperforming": [
+      307
+    ],
+    "other": [
+      308,
+      351
+    ],
+    "such": [
+      311
+    ],
+    "GCN-LR": [
+      313
+    ],
+    "ECFP-NN.": [
+      315
+    ],
+    "The": [
+      316,
+      338
+    ],
+    "experimental": [
+      317
+    ],
+    "validation": [
+      318
+    ],
+    "highlights": [
+      319
+    ],
+    "potential": [
+      321
+    ],
+    "classification,": [
+      327
+    ],
+    "making": [
+      328
+    ],
+    "approach": [
+      332
+    ],
+    "simulation": [
+      339
+    ],
+    "result": [
+      340
+    ],
+    "highlighted": [
+      341
+    ],
+    "improvement": [
+      343
+    ],
+    "system": [
+      347
+    ],
+    "when": [
+      348
+    ],
+    "compared": [
+      349
+    ],
+    "techniques.": [
+      353
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-09-22T06:50:58.402377",
+  "created_date": "2025-10-10T00:00:00"
+}

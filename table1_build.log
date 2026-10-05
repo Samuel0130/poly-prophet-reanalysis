@@ -1,0 +1,18 @@
+train {'source': 'train', 'raw_rows': 7973, 'valid_rows': 7973, 'invalid_rows': 0, 'unique_canonical_polymers': 7973, 'duplicate_valid_rows': 0, 'Tg_labels_raw': 511, 'Tg_labeled_unique': 511, 'FFV_labels_raw': 7030, 'FFV_labeled_unique': 7030, 'Tc_labels_raw': 737, 'Tc_labeled_unique': 737, 'Density_labels_raw': 613, 'Density_labeled_unique': 613, 'Rg_labels_raw': 614, 'Rg_labeled_unique': 614}
+dataset1 {'source': 'dataset1', 'raw_rows': 874, 'valid_rows': 874, 'invalid_rows': 0, 'unique_canonical_polymers': 866, 'duplicate_valid_rows': 8, 'Tg_labels_raw': 0, 'Tg_labeled_unique': 0, 'FFV_labels_raw': 0, 'FFV_labeled_unique': 0, 'Tc_labels_raw': 874, 'Tc_labeled_unique': 866, 'Density_labels_raw': 0, 'Density_labeled_unique': 0, 'Rg_labels_raw': 0, 'Rg_labeled_unique': 0}
+dataset2 {'source': 'dataset2', 'raw_rows': 7208, 'valid_rows': 7208, 'invalid_rows': 0, 'unique_canonical_polymers': 7174, 'duplicate_valid_rows': 34, 'Tg_labels_raw': 0, 'Tg_labeled_unique': 0, 'FFV_labels_raw': 0, 'FFV_labeled_unique': 0, 'Tc_labels_raw': 0, 'Tc_labeled_unique': 0, 'Density_labels_raw': 0, 'Density_labeled_unique': 0, 'Rg_labels_raw': 0, 'Rg_labeled_unique': 0}
+dataset3 {'source': 'dataset3', 'raw_rows': 46, 'valid_rows': 46, 'invalid_rows': 0, 'unique_canonical_polymers': 46, 'duplicate_valid_rows': 0, 'Tg_labels_raw': 46, 'Tg_labeled_unique': 46, 'FFV_labels_raw': 0, 'FFV_labeled_unique': 0, 'Tc_labels_raw': 0, 'Tc_labeled_unique': 0, 'Density_labels_raw': 0, 'Density_labeled_unique': 0, 'Rg_labels_raw': 0, 'Rg_labeled_unique': 0}
+dataset4 {'source': 'dataset4', 'raw_rows': 862, 'valid_rows': 862, 'invalid_rows': 0, 'unique_canonical_polymers': 862, 'duplicate_valid_rows': 0, 'Tg_labels_raw': 0, 'Tg_labeled_unique': 0, 'FFV_labels_raw': 862, 'FFV_labeled_unique': 862, 'Tc_labels_raw': 0, 'Tc_labeled_unique': 0, 'Density_labels_raw': 0, 'Density_labeled_unique': 0, 'Rg_labels_raw': 0, 'Rg_labeled_unique': 0}
+test {'source': 'test', 'raw_rows': 3, 'valid_rows': 3, 'invalid_rows': 0, 'unique_canonical_polymers': 3, 'duplicate_valid_rows': 0, 'Tg_labels_raw': 0, 'Tg_labeled_unique': 0, 'FFV_labels_raw': 0, 'FFV_labeled_unique': 0, 'Tc_labels_raw': 0, 'Tc_labeled_unique': 0, 'Density_labels_raw': 0, 'Density_labeled_unique': 0, 'Rg_labels_raw': 0, 'Rg_labeled_unique': 0}
+For target "Tc": 129 new samples were added.
+For target "Tg": 46 new samples were added.
+For target "FFV": 862 new samples were added.
+
+Table 1:
+Property          Unit  Labeled polymers           Range         Mean ± SD Missing, n (%)
+      Tg            °C               557  -148.03–472.25    99.69 ± 111.08 8,415 (93.79%)
+     FFV dimensionless              7892 0.22699–0.77710 0.36701 ± 0.02907 1,080 (12.04%)
+      Tc       W/(m·K)               866 0.04650–1.59000 0.25664 ± 0.10128 8,106 (90.35%)
+ Density         g/cm³               613 0.74869–1.84100 0.98548 ± 0.14619 8,359 (93.17%)
+      Rg             Å               614    9.728–34.673    16.420 ± 4.609 8,358 (93.16%)
+PASS: canonicalizers agree for every input; unique merged identities; exact membership union; primary labels unchanged; supplement means and label provenance checked

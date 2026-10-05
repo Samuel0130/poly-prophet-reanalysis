@@ -1,0 +1,11 @@
+{
+  "variant": "only_smiles",
+  "target": "Density",
+  "fold": 2,
+  "n_test": 123,
+  "n_train": 490,
+  "selected_epochs": 27,
+  "mae": 0.035650811042921365,
+  "rmse": 0.05782887278806354,
+  "r2": 0.8632468874297448
+}

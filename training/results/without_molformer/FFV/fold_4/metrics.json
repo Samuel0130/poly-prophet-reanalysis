@@ -1,0 +1,11 @@
+{
+  "variant": "without_molformer",
+  "target": "FFV",
+  "fold": 4,
+  "n_test": 1579,
+  "n_train": 6313,
+  "selected_epochs": 76,
+  "mae": 0.0050307363329230624,
+  "rmse": 0.007648045188632318,
+  "r2": 0.9228896564528382
+}

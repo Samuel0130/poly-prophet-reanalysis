@@ -1,0 +1,11 @@
+{
+  "variant": "without_cnn",
+  "target": "Tc",
+  "fold": 3,
+  "n_test": 173,
+  "n_train": 693,
+  "selected_epochs": 24,
+  "mae": 0.02935396992122048,
+  "rmse": 0.04308871608667179,
+  "r2": 0.771811964436756
+}

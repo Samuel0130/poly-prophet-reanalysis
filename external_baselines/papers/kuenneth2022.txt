@@ -1,0 +1,925 @@
+ARTICLE
+Bioplastic design using multitask deep neural
+networks
+Christopher Kuenneth 1,2, Jessica Lalonde 3,4, Babetta L. Marrone 3, Carl N. Iverson 5, Rampi Ramprasad 2 &
+Ghanshyam Pilania 1 ✉
+Non-degradable plastic waste jeopardizes our environment, yet our modern lifestyle and
+current technologies are impossible to sustain without plastics. Bio-synthesized and biode-
+gradable alternatives such as polyhydroxyalkanoates (PHAs) have the potential to replace
+large portions of the world ’s plastic supply with cradle-to-cradle materials, but their chemical
+complexity and diversity limit traditional resource-intensive experimentation. Here, we
+develop multitask deep neural network property predictors using available experimental data
+for a diverse set of nearly 23,000 homo- and copolymer chemistries. Using the predictors, we
+identify 14 PHA-based bioplastics from a search space of almost 1.4 million candidates which
+could serve as potential replacements for seven petroleum-based commodity plastics that
+account for 75% of the world ’s yearly plastic production. We also discuss possible synthesis
+routes for the identi ﬁed promising materials.
+https://doi.org/10.1038/s43246-022-00319-2 OPEN
+1 Materials Science and Technology Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA. 2 School of Materials Science and Engineering,
+Georgia Institute of Technology, Atlanta, GA 30332, USA. 3 Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA.
+4 Department of Mechanical Engineering and Materials Science, Duke University, Durham, NC 27708, USA. 5 Chemistry Division, Los Alamos National
+Laboratory, Los Alamos, NM 87545, USA. ✉email: gpilania@lanl.gov
+COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat 1
+1234567890():,;
+P
+lastics are an integral part of our everyday life and modern
+technology. Their simple, yet diverse, chemistries and
+tunable properties make plastics versatile and desirable;
+plastics display high or low ﬂexibility, strength, thermal, or
+electronic conductivity along with low cost, low weight, and
+abundance1. The global plastic production of 2019 amounts to an
+unimaginable 368 million tonnes and is expected to further
+increase in the coming years. About 40% (145 million tonnes) of
+the yearly plastic production accounts for packaging products
+such as bags, food containers, cutlery, or bottles, which have very
+short service lifetimes and often end up in land ﬁlls, seawater, or
+other natural environments 2–4. It is therefore not surprising that
+packaging plastics are one of the largest polluters of our world ’s
+ecosystems, severely threatening the existence of animals and
+humans through waste and microplastic particles on land and in
+oceans that last for decades or longer 5. Finding eco-friendly
+plastics (bioplastics) with properties akin to conventional plastics
+but with sustainable recycling options is therefore of utmost
+importance for a circular economy. 1 The bio-derived and bio-
+degradable family of polyhydroxyalkanoates (PHAs) is a pro-
+mising cradle-to-cradle material that can be synthesized by
+several microorganisms directly using sunlight and CO 2 from the
+environment or industrial point sources 3,6,7. Existing commercial
+entities have already studied the biosynthesis, processing, and
+industrialization of PHA-based polymers and blends 8. Diverse
+chemistries harbored in PHAs span a large property space with
+ample opportunities to design mechanical and thermal properties
+such as the Young ’s modulus ( E), tensile strength ( σ), elongation
+(ϵ), glass transition temperature ( Tg), melting temperature ( Tm),
+and degradation temperature ( Td)3,9–14.
+PHAs provide copious opportunities for chemical modi ﬁcation
+and property modulation 3,15. Key parameters of these modi ﬁca-
+tions are the numbers of carbons in the main-chain and side-chain
+(n and m in Fig. 1a), and the terminating functional groups of the
+side-chain (R in Fig. 1a)15,16. For instance, the most widely known
+PHA, poly-3-hydroxybutyrate (P3HB, with n = 1, m = 1, and
+no R), is brittle and inﬂexible17. As the number of carbon atoms in
+the backbone increases, the resulting polymers tend to display
+higher elongation at break ( ϵb) combined with improved
+mechanical strength and enhanced tendency for degradability 3.
+Also, PHAs with side-chain-terminating phenyl groups exhibit
+higher Tgs because of increased rigidity due to enhanced inter-
+chain interactions resulting from the polar side chain functional
+groups15,18. Besides systematic structural and chemical alterations,
+copolymers provide an additional knob to grow the accessible
+property space by not only combining multiple PHA-based motifs
+but also PHAs with conventional polymers 19. In the past, PHA-
+only copolymers have been found to improve mechanical prop-
+erties while keeping high Tm and low Tg values, which is ideal for
+applications that require large temperature operation windows3,14.
+By forming copolymers of PHAs with conventional polymers, one
+may harness synergistic effects, potentially leading to recyclable
+polymers with enhanced mechanical strength and improved gas
+permeability. Polymers with low gas permeabilities are of
+Fig. 1 Bioplastic design using multitask deep learning predictors. a Design pipeline. A large search space is created by combining 540 polyhydroxyalkanoates
+(PHAs) and 13 conventional polymers to copolymers. Property predictors and property requirements of commonly used polymers allow us to identify bioplastic
+candidates within the search space.b Architecture of the multitask neural network predictors. Three separate predictors are trained; one for each of the selector
+vectors (S1, S2, S3). S is a binary vector (1 for the selected component and 0 everywhere else) that selects the output property.c Prediction pipeline. The two
+SMILES58 strings belong to comonomers in a copolymer.
+ARTICLE COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2
+2 COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat
+particular interest to the food packaging industry where the
+containment of gases such as CO 2, or the prevention of gases such
+as O 2 from permeating into the food products, is an important
+factor in deciding application-speci ﬁc suitability of a polymer.
+Just contemplating copolymer compositions on a rather coarse
+composition grid ( c = 0, 0.1, … , 1), the total number of distinct
+PHA-only copolymer possibilities is far beyond a million, effec-
+tively rendering trial and error-based high-throughput experi-
+ments an impractical route of searching for application-speci ﬁc
+candidate materials 20. Also, the sheer size of the search space
+disqualiﬁes time-consuming computational methods such as
+density functional theory (DFT) or even classical molecular
+dynamics (MD) simulations. The burgeoning ﬁeld of polymer
+informatics21–26 offers an exciting alternative route to address
+such search problems by using modern data-driven machine
+learning approaches 18,27–29.
+The present study, with the details of the work ﬂow and
+machine learning framework outlined in Fig. 1, has several vital
+elements. First, we develop ef ﬁcient multitask deep neural
+network-based multiproperty predictors for copolymers that
+forecast three different thermal ( Tg, Tm, and Td), four different
+mechanical ( E, σy, σb, and ϵb), and six gas permeability ( μg∣g ∈
+{O2,C O 2,N 2,H 2, He, CH 4}) properties using nearly 23,000
+experimental data points pertaining to a diverse range of homo-
+and copolymer chemistries. Here, Tg, Tm, Td, E, σy, σb, and ϵb are
+the glass transition temperature, melting temperature, degrada-
+tion temperature, Young ’s modulus, tensile strength at yield,
+tensile strength at break, and elongation at break, respectively.
+μO2
+, μCO2
+, μN2
+, μH2
+, μHe, and μCH4
+stand for the gas permeabilities
+of O 2,C O 2,N 2,H 2, He, and CH 4. The thermal, mechanical, and
+gas permeability properties are selected as they play a critical role
+in the design and selection of plastics for packaging and other
+large-scale industrial applications. Second, we create a bioplastic
+candidate space of nearly 1.4 million bioplastics, which is spanned
+by 540 PHAs and 13 conventional polymer chemistries. Third, we
+follow a two-step protocol to ﬁnd several PHA-only and PHA-
+conventional polymer bio-replacements in the candidate space for
+seven petroleum-based and commonly used plastics. Possible
+synthesis routes of the bio-replacements are discussed. This work
+represents the state-of-the-art in polymer informatics, and con-
+tributes to and accelerates the identi ﬁcation of sustainable func-
+tional polymer candidate materials.
+Results and discussion
+Data Set . Our data set for training of the multitask property
+predictors includes a total of 22,731 homopolymer ( ≈60%) and
+copolymer ( ≈30%) data points of the thermal, mechanical, and
+the small molecule gas permeability properties as reported in
+Table 1. Each of the 7512 copolymer data points involves two
+distinct comonomers at various compositions while spanning
+over 1440 distinct copolymer chemistries. Homo- and copolymer
+data points of Tg, Tm, and Td, and homopolymer data points of
+μgs, E, and σb were already utilized in previous studies 30–35. The
+copolymer data points belonging to μgs, E, σy, σb, and ϵb, and
+homopolymer data points of σy and ϵb were collected from the
+PoLyInfo35 repository for this study. If multiple data points were
+available for a single polymer in PoLyInfo, we used the average
+values after a manual curation. For consistency and uniformity,
+only Tg and Tm data points measured via differential scanning
+calorimetry (DSC), Td data points measured via thermogravi-
+metric analysis (TGA), and mechanical data points recorded
+around room temperature (300 K) were included in the data set.
+Moreover, for con ﬁgurational consistency, all copolymer data
+points in this study are from random copolymers. As part of an
+additional curation step and our due diligence strategy, we
+employed a clustering algorithm (DBSCAN using standard
+parameters as implemented in Scikit-learn 36) to identify outliers
+and select suspicious data points for manual inspection. The
+degree of polymerization and molecular weight were not taken
+into account because they were not uniformly available for all
+data points. Mandated by the multitask method, all property
+values were scaled to the range of [0, 1] (min-max scaling) for
+training and transformed back to the actual ranges before com-
+puting the respective error metrics. Additionally, ϵb and the gas
+permeabilities were transformed to the log base 10 scale
+(x 7! log10ðx þ 1Þ) before training because of their power-law-
+shaped data distributions (see Supplementary Figs. 4 –6).
+Property predictors . Multitask deep neural networks with meta
+learners have shown best-in-class performance in past polymer
+informatics studies 33,34 due to their ability to utilize inherent
+correlations in data that helps to overcome data sparsity. Here, we
+create three multiproperty predictors (one for each category in
+Table 1) to predict, in total, 13 polymer properties using the data
+Table 1 Overview of our data set used for training the multitask predictors.
+Symbol Unit Homopolymer Copolymer Range Total
+Thermal properties
+Glass transition temp. Tg K 5183 3312 [80,873] 8495
+Melting temp. Tm K 2132 1523 [215,860] 3655
+Degradation temp. Td K 3584 1064 [291,1173] 4648
+Mechanical properties
+Young’s modulus E MPa 592 322 [0.2,4000] 914
+Tensile strength at yield σy MPa 216 78 [0.01,132] 294
+Tensile strength at break σb MPa 663 318 [0.04,200] 981
+Elongation at break ϵb 868 260 [0.3, 995] 1128
+Gas permeability properties
+O2 μO2
+barrer 420 210 [5 ⋅10−6,1000] 630
+CO2 μCO2
+barrer 313 119 [10 −6, 4756] 432
+N2 μN2
+barrer 417 99 [3 ⋅10−5, 480] 516
+H2 μH2
+barrer 266 46 [2 ⋅10−2, 5000] 312
+He μHe barrer 261 58 [5 ⋅10−2,1950] 319
+CH4 μCH4
+barrer 360 47 [4 ⋅10−4, 1690] 407
+Total 15,275 7456 22,731
+The property portfolio for the three subgroups, associated property ranges, units of measurements, as well as the number of homo- and copolymers incl uded in the dataset are outlined.
+COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2 ARTICLE
+COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat 3
+set and categories pro ﬁled in Table 1 and ﬁngerprints outlined in
+the Methods section. Figure 1b schematically shows the archi-
+tecture of the multitask predictors, while implementation details
+are given in the Methods section and in Supplementary Fig. 1.
+The developed meta learners and cross-validation predictors
+display outstanding overall coef ﬁcient of determination ( R2)
+values of 0.97 and 0.93, respectively. The root-mean-square error
+(RMSE) and R2 values of all properties are reported in Table 2.
+The meta learner (cross-validation) predictors of the thermal
+properties perform very well with R2s as high as 0.98 (0.92), 0.97
+(0.84), and 0.96 (0.72) for Tg, Tm, and Td, respectively. This is
+expected because of the large number of data points and high data
+ﬁdelity of the thermal property data points. The reported
+validation metrics here are slightly better than those reported in
+Ref. 35, which uses a very similar thermal property data set. This
+is because of the extra data curation and cleaning steps adopted in
+this work, as discussed above in the Data Set section. Wu et al. 37
+and Tao et al. 38 report similar R2 values of 0.91 and 0.93,
+respectively, for a similar-sized Tg data set. Chen et al. 39 and Tao
+et al. 40 obtain slightly worse R2 values for learning Tg. We note
+that different training and evaluation schemes lead to different
+metrics and only the exact same data sets (and splits) should be
+compared for benchmarking purposes. The mechanical and gas
+permeability meta learners show very high R2s of 0.94, 0.96, 0.94,
+and 0.91 for E, σy, σb, and ϵb, respectively, and 0.99, 0.99, 0.99,
+1.00, 0.99, and 0.99 for the six gases g ∈ {O2,C O 2,N 2,H 2, He,
+CH4}, respectively. The overall performance of the three
+developed meta-learners with averaged R2s of 0.97, 0.94, and
+0.99 is exceptional and may be credited to the large data set of
+almost 23,000 data points, additional data curation measures,
+well-conditioned and smooth ﬁngerprints, and fully-
+hyperparameter-optimized multitask deep neural networks. We
+use the meta learners for property predictions. The cross-
+validation metrics indicate the generalization error for learning
+the data set (see also Supplementary Discussion on “General-
+ization and data set errors ”). The individual parity plots of the
+meta learners for each property can be found in the Supplemen-
+tary Figs. 7 –9. Supplementary Fig. 11 shows a good agreement of
+predictions and data points of four copolymers, which are
+included in the test data set only.
+Bioplastic search space . In the next step, we consider a bioplastic
+space that can be searched using the property predictors devel-
+oped in the last section. As shown in Fig. 1a, 540 PHAs and 13
+conventional polymers de ﬁne and bound this space. The 540
+PHAs are devised through variations of the number of carbon
+atoms in the main-chain and side-chain from 1 to 6 ( n and m in
+Fig. 1a), and by terminating the side-chains with 17 different
+functional groups (see Supplementary Fig. 2). The bio-
+copolymers of this space are generated by the outer product of
+PHAs and conventional polymers at eleven different composi-
+tions ( c = 0, 0.1, … , 1). The total number of bioplastics in the
+search space amounts to 1 373 503 and is composed of 553
+homopolymers, 146 070 copolymers of PHA-only, and 7 033
+copolymers of PHAs and conventional polymers. The 13 con-
+ventional polymers were selected according to the list of most
+commonly used plastics and are documented in Supplementary
+Fig. 3.
+Figure 2a, b display the 2D uniform manifold approximations
+and projections (UMAPs) 41 of two different ﬁngerprint sub-
+spaces. These subspaces contain all ﬁngerprint components of the
+selected polymers. The ﬁngerprint subspace of Fig. 2a contains
+ﬁve PHAs (green dots, c = 1), the remaining 548 polymers (blue
+dots, c = 0), and copolymers ( c = 0.1, 0.2, … , 0.9) that connect the
+ﬁve PHAs and the remaining 548 polymers. Interestingly, UMAP
+has identi ﬁed similar polymers and agglomerated them into the
+shape of stars. The corner vertices of these stars are the
+ﬁngerprints of the copolymers closest to the ﬁve PHAs
+(c = 0.9), while all other dots in the stars indicate ﬁngerprints
+of polymers of similar chemistry. For example, the dots of the
+topmost star in Fig. 2a show ﬁngerprints of PHA copolymers
+containing a nitro phenyl functional group, while the rightmost
+star includes ﬁngerprints of PHA copolymers containing
+benzonitrile. The different clusters in Fig. 2b have 13 corner
+vertices (some of them are hidden) that indicate the ﬁngerprints
+of the copolymers closest to the 13 conventional polymers
+(c = 0.9, see Fig. 1a), which are included in the ﬁngerprint
+subspace of Fig. 2b, instead of the ﬁve PHAs as in Fig. 2a.
+Equivalent to the stars, the different clusters contain ﬁngerprints
+of polymers of similar chemistry. The agglomeration to stars or
+clusters illustrates that the used ﬁngerprints (i) unambiguously
+Table 2 The RMSEs and R2s averages of the ﬁve cross-validation models and meta learner from predictions on the respective
+validation data sets. The cross-validation deviations show one standard deviation (1 σ).
+Symbola Unit Cross-validation Meta learner
+RMSE R2 RMSE R2
+Thermal properties
+Tg K 29.78 ± 1.26 0.92 ± 0.01 13.04 0.98
+Tm K 40.17 ± 0.83 0.84 ± 0.01 16.67 0.97
+Td K 62.16 ± 2.52 0.72 ± 0.02 23.84 0.96
+Mechanical properties
+E MPa 475.34 ± 31.84 0.78 ± 0.03 237.2 0.94
+σy MPa 15.43 ± 3.81 0.79 ± 0.12 7.1 0.96
+σb MPa 18.82 ± 1.00 0.77 ± 0.02 9.81 0.94
+ϵbb 0.43 ± 0.04 0.59 ± 0.10 0.2 0.91
+Gas permeability properties
+μO2
+b barrer 0.13 ± 0.02 0.97 ± 0.02 0.07 0.99
+μCO2
+b barrer 0.20 ± 0.04 0.96 ± 0.02 0.11 0.99
+μN2
+b barrer 0.12 ± 0.04 0.96 ± 0.03 0.05 0.99
+μH2
+b barrer 0.14 ± 0.02 0.97 ± 0.01 0.06 1.0
+μHe b barrer 0.14 ± 0.01 0.96 ± 0.01 0.06 0.99
+μCH4
+b barrer 0.16 ± 0.03 0.96 ± 0.01 0.06 0.99
+a See Table 1 for symbol de ﬁnition.
+b Trained on log base 10 scale ( x7!log10 ðx þ 1Þ). RMSE and R2 values are reported on this scale.
+ARTICLE COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2
+4 COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat
+distinguish polymers; (ii) position related polymers of similar
+chemistries in the vicinity (i.e., pack all copolymers with a speci ﬁc
+side-chain functional group in the same part of the space); (iii)
+and thus create a physically meaningful learning space with
+chemical similarity integrated that is well-suited for machine
+learning.
+Figure 3 displays property relations for a selected set of
+properties of the bioplastic search space in order to qualitatively
+assess our predictions and verify physical trends expected based
+on chemical intuition. The trend in Fig. 3a is that polymers of
+high Tg values also have high Tm and room temperature E values.
+This con ﬁrms our chemical intuition that Tg is approximately
+linearly correlated to Tm, and high Tg and/or Tm polymers have
+stiffer morphologies thus possessing high E values. Also, we
+observe that the correlation of Tg and Tm is not sharp but broad,
+which arises from the different side-chain functional groups in
+the search space. In contrast, Fig. 3b suggests little to no
+correlation of Tm and σb, except that the range spanned by σb at a
+given Tm broadens as Tm increases. However, σb is intuitively
+correlated to E, i.e., stiffer materials (high E) break at higher
+stresses (high σb). Figure 3c shows a roughly linear correlation of
+μCO2
+and μO2
+that again agrees with chemical intuition and lends
+credibility to the developed predictors.
+Bioplastic Replacements. Up to this point, we have discussed the
+training and validation of three multitask deep neural networks
+(each targeting separately the thermal, mechanical, and gas per-
+meability properties) to forecast 13 polymer properties, the
+consideration of a search space of over 1.3 million bioplastic
+candidates, and predictions for each of the candidates in the
+search space. Next, we search the candidate set for suitable
+replacements for seven petroleum-based and commonly used
+plastics listed in Table 3. The search is performed following a
+two-step protocol. In the ﬁrst step, we employ a nearest neighbors
+search to ﬁnd the ﬁve closest replacements (within the target
+property space) for each of the seven plastics and in each copo-
+lymer subgroup of PHA-only and PHAs with conventional
+polymers. We employ the nearest neighbors algorithm using
+standard parameters as implemented in Scikit-learn 36. Table 3
+reports averaged property values of polymers at standard condi-
+tion (ﬁlms or pieces from neat resin). The values of PE match the
+properties of medium-/ high-density PE the best. Process and
+manufacturing conditions can impact these property values. We
+note that the nearest neighbors search may be performed for any
+polymer with property values that deviate from the average values
+considered here. The nearest neighbors search algorithm and
+nearly 1.4 million bioplastic candidates, including the predicted
+properties, are shared on GitHub (see Code Availability section).
+In the second step, we use our domain expertise to pick the
+most promising bio-replacement from the ﬁve candidates based
+on its potential to be synthesized. The most promising bio-
+replacements for each commodity plastic and for each of the two
+copolymer subgroups are reported in Fig. 4. The full list of bio-
+replacements (70) is provided as Supplementary Data 1.
+Figure 5 a shows the property distributions of the bioplastic
+candidate set along with the properties of the seven commodity
+plastics (see Table 3) indicated as triangles. As expected, the Tm
+peak is shifted to higher temperatures (by around 80 K) with
+respect to the Tg peak. Among the mechanical properties, the
+densities of E and σb demonstrate a peak at around 540 MPa and
+20 MPa, while ϵb shows a broad distribution, which covers most
+of the data range. Moreover, the majority of μO2
+and μCO2
+values
+are below 4 barrer and 20 barrer, which match the expected value
+range of this polymer class 35. Overall, all commodity plastics
+a 5 PHAs
+b 13 conventional polymers
+PC1
+PC2
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+Composition c
+Fig. 2 Two-dimensional UMAP 41 plot of two ﬁngerprint subspaces that
+contain only ﬁngerprints of selected polymers. a Five PHAs. The dark
+green dots ( c = 1) show the ﬁngerprints of the SMILES strings [*]
+OCCC(=O)[*], [*]OC(O)CC(=O)[*], [*]OC(C(=O)O)CC(=O)
+[*], [*]OC(C(=O)OC)CC(=O)[*], and [*]OC(N)CC(=O)[*]. b 13
+conventional polymers. The dark green dots show the ﬁngerprints of the 13
+conventional polymers. The dark blue dots ( c = 0) in panels a and
+b indicate the ﬁngerprints of the remaining 548 and 540 polymers in the
+bioplastic search space (a total of 553 polymers), respectively. The dots
+with intermediate colors (green to blue) indicate the ﬁngerprints of
+connecting copolymers. PC1 and PC2 represent the ﬁrst and second
+principal components in the UMAP projection, respectively.
+200 300 400
+Tg [K]
+300
+400
+500Tm [K]
+a
+0 50 100
+σb [MPa]
+300
+400
+500Tm [K]
+b
+0 50 100
+μCO2 [barrer]
+0
+10
+20
+30μO2 [barrer]
+c
+1
+2
+E [GPa]
+Fig. 3 Property relations of almost 1.4 million bioplastic candidates. Tm, Tg, σb, μO2
+, μCO2
+, and E in the panels a– c stand for melting temperature, glass
+transition temperature, tensile strength at break, O 2 gas permeability, CO 2 gas permeability, and Young ’s modulus, respectively. The data point densities
+are indicated in the plot margins.
+COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2 ARTICLE
+COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat 5
+(triangles) lie within the property ranges spanned by the
+bioplastic search space. However, because the triangles often lie
+in the tails of the property distributions, it is challenging (but
+possible) to ﬁnd suitable replacements. Similar to Fig. 5a–h
+compare the experimental properties of the commodity plastics
+with their top bio-replacements identi ﬁed in Fig. 4 in a radar
+chart. Qualitative graphical pairwise similarities between the
+property pro ﬁles in each radar chart indicate that the identi ﬁed
+bio-replacements do indeed exhibit similar sets of properties with
+respect to the experimental properties. A comparison of the
+predicted and experimental properties of the seven commodity
+plastics is shown in Supplementary Fig. 10.
+Synthesis Opportunities . It is interesting to note that all PHA-
+only and PHA-conventional bio-replacements in Fig. 4 contain
+aromatic groups in the side-chain. The biosynthesis of PHAs
+containing an aromatic monomer was ﬁrst reported in 1990 by
+Fritzsche et al. 42 for Poly(3-hydroxy-5-phenylvalerate) and since
+then a wide range of aromatic side-chain functional groups have
+been introduced into PHAs through biosynthesis routes. For
+instance, see a recent comprehensive review by Ishii-Hyakutake
+et al. 43 for a more detailed discussion. Looking at the complexity
+of the chemistries that are already accessible via biosynthesis,
+prospects of producing the identi ﬁed PHA-only bio-replacements
+are rather optimistic. For example, Aróstegui et al. 44 reported that
+the Pseudomonas oleovorans bacterium synthesizes PHAs with
+nitrophenyl side-chain functional groups, which occur in the
+PHA-only bio-replacements of PVC, PS, and PEN in Fig. 4.
+Moreover, engineering the bacterial PHA synthesis remains a
+highly active area of research with novel genome editing techni-
+ques, such as clustered regularly interspaced short palindromic
+repeats interference (CRISPRi), 45 that carry enormous potential
+for future breakthroughs in terms of both the accessible chemical
+diversity in PHA biosynthesis of homo- and copolymers as well as
+the yield optimization of the produced polymer chemistries.
+Chemical synthesis routes for PHAs have been widely reported in
+the literature as well 46–49. The potential for the chemical synthesis
+Table 3 Measured properties of petroleum-based commodity plastics that in total account for 75.1% of Europe ’s yearly plastic
+production in 2019 (see usage column) 2.
+Polymer Abb. Applications SMILES a Tg [K] Tm [K] σb [MPa] ϵb E [MPa] μO2
+[barrer]
+μCO2
+[barrer]
+Usage [%]
+Poly(ethylene) PE Cloth
+packaging,
+shopping bags,
+waste bags
+[*]CC[*] 220 403 22.0 338.0 670 2.00 27.10 29.2
+Poly(propylene) PP Living hinges,
+pipes, caps,
+cutlery
+[*]CC([*])C 287 437 30.0 150.0 1600 0.76 4.40 19.3
+Poly(vinyl
+chloride)
+PVC Window
+frames, cables,
+pipes, ﬁlms
+[*]CC([*])
+Cl
+353 485 36.0 29.7 1680 0.06 0.23 9.9
+Poly(ethylene
+terephthalate)
+PET Bottles,
+automotive
+industry
+[*]CCOC(=O)
+c1c cc(C( =O)
+O[*])cc1
+350 526 119.0 65.0 2970 0.05 0.33 7.9
+Poly(styrene) PS Packaging
+ﬁllers, cutlery,
+foam cups,
+take-out boxes
+[*]CC([*])
+c1 ccccc1
+371 528 34.0 2.0 2450 2.60 12.60 6.8
+Poly(hexano-6-
+lactam)
+Nylon6 Yarns, ﬁbers [*]CCCCCC
+(=O)N[*]
+324 493 60.0 61.0 1600 4.00 0.09 2
+Poly(ethylene
+2,6-naphthalate)
+PEN Bottles,
+scintillators,
+medical
+product
+containers
+[*]CCOC(=O)
+c1cc
+c2cc(C(=O)
+O[*]) ccc2c1
+357 541 77.0 42.0 2310 0.02 0.24
+aThe two stars ( [*]) indicate the endpoints of the polymer repeat unit.
+Property values are averaged over the entries in the PoLyInfo repository 35 at standard conditions ( ﬁlm or piece from neat resin).
+Fig. 4 PHA-only and PHA-conventional bio-replacements for seven commodity plastics. Full polymer names are listed in Table 3.
+ARTICLE COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2
+6 COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat
+of the copolymers in this work (see Fig. 4 or Supplementary Data 1)
+lies in the ability to combine two comonomers of differing
+composition. Methods used in the synthesis of polystyrene-co-
+lactone copolymers50,51 can lead to the desired formation of the
+PHA-conventional bio-replacements of PP and PS. A chemical
+synthesis route for the PE and Nylon 6 PHA-conventional bio-
+replacements may follow similar steps used for the copolymeriza-
+tion of PHA/PEO (polyethylene oxide) copolymers 19.T h eP V C ,
+PET and PEN bio-replacements from PHA-conventional polymers
+may be produced via a reactive twin-screw extrusion process to
+form block structures containing phthalate-co-lactones.52 Alterna-
+tively, a copolymer of repeating phthalate/lactone units has recently
+been produced via a copolymerization reaction of ε-lactone with
+degraded PET53,54. We believe the predictions based on our work
+have potential to translate into new PHA biopolymers or
+copolymers and will inspire development of new PHA-only or
+hybrid conventional-PHA polymer synthesis routes.
+The developed property predictors used in this work have several
+limitations which are largely tied to the availability of training data.
+The property predictors ignore process and manufacturing
+conditions as well as certain details of morphology (e.g., %
+crystallinity). Furthermore, other relevant factors such as the
+molecular weight distribution, form factors (e.g., linear versus
+branched), additives, etc. are currently not integrated in the
+property prediction pipeline. In addition, low level con ﬁgurational
+trends across diverse chemistries such as subtle variations stemming
+from chain morphologies or different relative placements of distinct
+monomer units across the chains are not accounted for. If such
+information becomes available in the future, the developed
+predictors can easily be updated to account for these additional
+effects. The proposed informatics pipeline should be considered an
+essential ﬁrst step to solve the sustainable polymer design problem
+that calls for future improvements such as the development of
+improved property predictors, integrated synthesizability criteria,
+and above all, process optimization protocols to make the designed
+polymers a practical reality.
+Conclusion
+We have developed an informatics-based bioplastic design pipeline,
+which has identiﬁed promising PHA-based bioplastic replacements
+for seven petroleum-based commodity plastics. Our study starts
+with the data collection and curation of approximately 23,000
+homo- and copolymer data points spanning 13 properties critical
+for everyday applications and use. Multitask neural networks with a
+meta learner, pioneered by us for polymer informatics, forecast
+thermal, mechanical, and gas permeability properties for polymers
+over a broad chemical space with unprecedented performance.
+Using the trained models, we predict the 13 key thermal,
+mechanical, and gas permeability properties of all polymers in a
+bioplastic search space of almost 1.4 million polymers. The property
+predictions are validated and subsequently utilized to ﬁnd bio-
+replacements for seven commodity plastics that, in total, account
+for more than 75% of the yearly plastic production. Using a two-
+step selection protocol of a nearest neighbors search and synthe-
+sizability criteria, we propose two bio-replacements for each com-
+modity plastic and discuss chemical synthesis and biosynthesis
+routes for these promising polymer replacements. Informatics can
+help to identify suitable synthesis strategies as well 55.
+The implications of this work are far-reaching. We currently
+produce by far more plastics than we can recycle, 4 and the
+d e m a n df o rp l a s t i c si se x p e c t e dt oc o n t i n u et og r o wa ta n
+annual rate of 4%. 56 As countries begin to implement restric-
+tions on plastic use, there is an urgent need for bioplastic
+alternatives to conventional plastics. Yet, the options of com-
+mercially available biopolymers are currently very limited. 57
+Our approach to design and discover functional biopolymers
+can be applied to greatly accelerate the replacement of con-
+ventional plastic materials with more sustainable alternatives,
+and with possibly even greater performance advantages. The
+candidate biopolymers, in particular PHAs, might be synthe-
+sized by known chemical or biosynthetic routes, hybrid routes,
+or routes yet to be developed. Our approach can augment
+conventional empirically based design approaches by guiding
+the way to more targeted experime nts, fewer experimental trials,
+or shorter times to market. Our work provides an informatics-
+based screening tool for researchers and developers aiming to
+produce bioplastics with improved thermomechanical and
+transport properties for better performance in speci ﬁca p p l i -
+cations, thus accelerating the transition to a circular economy.
+Methods
+Fingerprinting.T h e ﬁngerprinting process converts geometric and chemical
+information of polymers to machine-readable numerical representations for
+Fig. 5 Experimental and predicted properties. a Property density pro ﬁles computed over the entire prediction set of bioplastic candidates. Missing x-axes
+beyond a certain cutoff indicate zero predicted property densities over those property ranges. The triangles show experimental properties of the se ven
+commodity plastics. Full polymer names are listed in Table 3. b– h Property radar charts for each commodity plastic. Triangles with solid lines show the
+experimental properties. Circles with dashed lines and diamonds with dotted lines indicate predicted properties of the bio-replacements in Fig. 4 for the
+copolymer subgroups of PHA-only and PHA-conventional polymers, respectively.
+COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2 ARTICLE
+COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat 7
+training machine learning models. Homo polymer repeat units are represented as
+simpliﬁed molecular-input line-entry system (SMILES) 58 strings that use two
+stars to indicate the two endpoints of the repetitive unit of the polymers, but
+otherwise follow the SMILES syntax. The ﬁngerprint vector ( F)i nt h i sw o r kh a s
+849 components and is calculated based upon the SMILES string following a
+two-step protocol 34:F i r s t ,w ec o m p u t eh i e r a r c h i c a lﬁngerprints that capture
+structural and key chemical features of each comonomer at three different length
+scales59,60. At the atomic scale, our ﬁngerprints track the occurrence of a ﬁxed
+set of atomic fragments (or motifs) 61. For example, the fragment “C3-S2-C3 ” is
+composed of three contiguous atoms, in this order, a three-fold coordinated
+carbon, a two-fold coordinated sulfur, and a three-fold coordinated carbon. A
+vector of such triplets represents the ﬁngerprint components at the lowest
+hierarchy. The next level uses the quantitative structure-property relationship
+(QSPR) ﬁngerprints 62 to capture features on larger length-scales. QSPR ﬁnger-
+prints are often used in chemical and biological sciences, and used here as
+implemented in the chem informatics toolkit RDKit 63.E x a m p l e so fs u c hﬁn-
+gerprints are the van der Waals surface area 64, the topological polar surface area
+(TPSA)65,66, the fraction of atoms that are part of rings (i.e., the number of
+atoms associated with rings divided by the total number of atoms in the formula
+unit), and the fraction of rotatable bonds. The highest length-scale ﬁngerprint
+components in our polymer ﬁngerprints deal with “morphological descriptors ”.
+They include features such as the shortest topological distance between rings, the
+fraction of atoms that are part of side-chains, and the length of the largest side-
+chain30.
+Second, we sum the composition-weighted comonomer ﬁngerprints to
+compute the total copolymer ﬁngerprint vector F ¼ ∑N
+i Fici,w h e r eN is the
+number of comonomers in the copolymer, Fi the ith comonomer ﬁngerprint,
+and ci the fraction of the ith comonomer. This copolymer ﬁngerprint satis ﬁes the
+two main demands of uniqueness and invariance to different (but equivalent)
+periodic unit speci ﬁcations and renders the ﬁngerprinting routine invariant to
+the order in which one may sort the comonomers. Contrary to homopolymer
+ﬁngerprints, copolymer ﬁngerprints may not be interpretable (e.g., the
+composition-weighted sum of the ﬁngerprint component “shortest distance
+between rings ” of two homopolymers has no physical meaning). In our work, all
+copolymer data points are of random copolymers, and alternating copolymers
+were treated as homopolymers.
+Multitask predictor and meta learner . Multitask deep neural networks simul-
+taneously learn multiple polymer properties to utilize possible inherent corre-
+lations in data. Figure 1b schematically portrays the architecture of the three
+concatenation-conditioned mul titask predictors: the copolymer ﬁngerprint and
+selector vector are fed to a feed-forward deep neural network that outputs a
+single property. The selector vector is a binary vector and speci ﬁes the output
+property. For instance, the selector vector of the thermal properties predictor
+(S1) has three components and encodes Tg as [100], Tm as [010], and Td as [001].
+All parameters of the neural networks , such as the number of layers, number of
+nodes, dropout rates, and activation functions, are optimized using the
+Hyperband method 67 of the Python package KerasTuner 68. Final parameters are
+reported in Supplementary Table 1. All models were implemented using the
+Python API of TensorFlow 69.
+The training protocol of the predictors follows state-of-the-art techniques
+involving ﬁve-fold cross-validation and a meta learner that forecasts the ﬁnal
+property values based upon the ensemble of cross-validation predictors 34 (see also
+Supplementary Fig. 1). The parameters of the cross-validation models are ﬁxed
+when used in the meta learner. The meta learner has the same network architecture
+as the multitask predictors but receives the ﬁve outputs of the multitask predictors
+as inputs (rather than the copolymer ﬁngerprint). The cross-validation process
+ensures that each data point has at least once been in the validation data set and
+allows us to report the generalization error as averaged RMSEs and R2s of the
+validation data sets. The three meta learners operate as production predictors. After
+shufﬂing, the data set was split into two parts. 20% of the data set was set aside for
+training the meta learners, while the remaining 80% was used for ﬁve-fold cross-
+validation and the validation of the meta learner. All data set splits were strati ﬁed
+by the properties.
+Data availability
+All the polymer data used in this work to train the various property prediction models
+can be found in the PoLyInfo database https://polymer.nims.go.jp/en/(National Institute
+for Materials Science (NIMS) holds the copyright of this database system).
+Code availability
+The Python code for creating the 1 373 503 bioplastic candidates, the bioplastic
+candidates with property predictions, the code for searching the bio-replacements, and
+the 70 predicted bio-replacements for seven commodity plastics are available at https://
+github.com/Ramprasad-Group/bioplastic_design. Production models are deployed at
+https://PolymerGenome.org.
+Received: 23 March 2022; Accepted: 10 November 2022;
+References
+1. Satti, S. M. & Shah, A. A. Polyester-based biodegradable plastics: an approach
+towards sustainable development. Lett. Appl. Microbiol. 70, 413 –430 (2020).
+2. Plasticseurope. https://www.plasticseurope.org/en/resources/market-data.
+3. Naser, A. Z., Deiab, I. & Darras, B. M. Poly(lactic acid) (PLA) and
+polyhydroxyalkanoates (PHAs), green alternatives to petroleum-based
+plastics: a review. RSC Adv. 11, 17151 –17196 (2021).
+4. Geyer, R., Jambeck, J. R. & Law, K. L. Production, use, and fate of all plastics
+ever made. Sci. Adv. 3,2 5 –29 (2017).
+5. Lim, X. Microplastics are everywhere –but are they harmful? Nature 593,
+22–25 (2021).
+6. Poltronieri, P. & Kumar, P. Polyhydroxyalkanoates (PHAs) in Industrial
+Applications; Springer International Publishing; pp 2843 –2872, https://doi.org/
+10.1007/978-3-319-68255-6_70 (2019).
+7. Go!PHA: The Global Organisation for PHA. https://www.gopha.org.
+8. Koller, M. & Mukherjee, A. A new wave of industrialization of PHA
+biopolyesters. Bioengineering 9, 74 (2022).
+9. Follain, N. et al. Structure and barrier properties of biodegradable
+polyhydroxyalkanoate ﬁlms. J. Phys. Chem. C 118, 6165 –6177 (2014).
+10. Pilania, G., Iverson, C. N., Lookman, T. & Marrone, B. L. Machine-learning-
+based predictive modeling of glass transition temperatures: a case of
+polyhydroxyalkanoate homopolymers and copolymers. J. Chem. Inf. Model.
+59, 5013 –5025 (2019).
+11. Bejagam, K. K., Iverson, C. N., Marrone, B. L. & Pilania, G. Molecular
+dynamics simulations for glass transition temperature predictions of
+polyhydroxyalkanoate biopolymers. Phys. Chem. Chem. Phys. 22,
+17880–17889 (2020).
+12. Bejagam, K. K., Iverson, C. N., Marrone, B. L. & Pilania, G. Composition and
+conﬁguration dependence of glass-transition temperature in binary
+copolymers and blends of polyhydroxyalkanoate biopolymers.
+Macromolecules 54, 5618 –5628 (2021).
+13. Bejagam, K. K. et al. Predicting the mechanical response of
+polyhydroxyalkanoate biopolymers using molecular dynamics simulations.
+Polymers 14, 345 (2022).
+14. Bejagam, K. K., Lalonde, J., Iverson, C. N., Marrone, B. L. & Pilania, G. Machine
+learning for melting temperature predictions and design in
+polyhydroxyalkanoate-based biopolymers.J. Phys. Chem. B 126,9 3 4–945 (2022).
+15. Sharma, V., Sehgal, R. & Gupta, R. Polyhydroxyalkanoate (PHA): Properties
+and modi ﬁcations. Polymer 212, 123161 (2021).
+16. Pryadko, A., Surmeneva, M. A. & Surmenev, R. A. Review of hybrid materials
+based on polyhydroxyalkanoates for tissue engineering applications. Polymers
+13, 1738 (2021).
+17. McAdam, B., Brennan Fournet, M., McDonald, P. & Mojicevic, M. Production
+of Polyhydroxybutyrate (PHB) and factors impacting its chemical and
+mechanical characteristics. Polymers 12, 2908 (2020).
+18. Jiang, Z., Hu, J., Marrone, B. L., Pilania, G. & Yu, X. B. A deep neural network
+for accurate and robust prediction of the glass transition temperature of
+polyhydroxyalkanoate homo- and copolymers. Materials 13, 5701 (2020).
+19. Winnacker, M. & Rieger, B. Copolymers of polyhydroxyalkanoates and
+polyethylene glycols: recent advancements with biological and medical
+signiﬁcance. Polym. Int. 66, 497 –503 (2017).
+20. Albright, V. C. & Chai, Y. Knowledge gaps in polymer biodegradation
+research. Environ. Sci. Technol. 55, 11476 –11488 (2021).
+21. Chen, L. et al. Polymer informatics: Current status and critical next steps.
+Mater. Sci. Eng. R: Rep. 144, 100595 (2021).
+22. Batra, R., Song, L. & Ramprasad, R. Emerging materials intelligence
+ecosystems propelled by machine learning. Nat. Rev. Mater. 6, 655 –678
+(2021).
+23. Ramprasad, R., Batra, R., Pilania, G., Mannodi-Kanakkithodi, A. & Kim, C.
+Machine learning in materials informatics: recent applications and prospects.
+npj Comput. Mater. 3, 54 (2017).
+24. Audus, D. J. & de Pablo, J. J. Polymer informatics: opportunities and
+challenges. ACS Macro Lett. 6, 1078 –1082 (2017).
+25. Peerless, J. S., Milliken, N. J. B., Oweida, T. J., Manning, M. D. & Yingling, Y.
+G. Soft matter informatics: current progress and challenges. Adv. Theory
+Simul. 2, 1800129 (2019).
+26. Adams, N. & Murray-Rust, P. Engineering polymer informatics: towards the
+computer-aided design of polymers. Macromol. Rapid Commun. 29, 615 –632
+(2008).
+27. Zhong, S. et al. Machine learning: new ideas and tools in environmental
+science and engineering. Environ. Sci. Technol. , acs.est.1c01339, https://doi.
+org/10.1021/acs.est.1c01339, (2021).
+ARTICLE COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2
+8 COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat
+28. Jablonka, K. M., Jothiappan, G. M., Wang, S., Smit, B., & Yoo, B. Bias
+free multiobjective active learning for materials design and discovery.
+Nat. Commun. 12, 2312 (2021).
+29. Barnett, J. W. et al. Designing exceptional gas-separation polymer membranes
+using machine learning. Sci. Adv. , 6, https://doi.org/10.1126/sciadv.aaz4301,
+(2020).
+30. Kim, C., Chandrasekaran, A., Huan, T. D., Das, D. & Ramprasad, R. Polymer
+genome: a data-powered polymer informatics platform for property
+predictions. J. Phys. Chem. C 122, 17575 –17585 (2018).
+31. Kim, C., Chandrasekaran, A., Jha, A. & Ramprasad, R. Active-learning and
+materials design: The example of high glass transition temperature polymers.
+MRS Commun. 9, 860 –866 (2019).
+32. Jha, A., Chandrasekaran, A., Kim, C. & Ramprasad, R. Impact of dataset
+uncertainties on machine learning model predictions: The example of
+polymer glass transition temperatures. Model. Simul. Mater. Sci. Eng. 27,
+24002 (2019).
+33. Kuenneth, C. et al. Polymer informatics with multi-task learning. Patterns 2,
+100238 (2021).
+34. Kuenneth, C., Schertzer, W. & Ramprasad, R. Copolymer informatics with
+multitask deep neural networks. Macromolecules 54, 5957 –5961 (2021).
+35. PoLyInfo. https://polymer.nims.go.jp/en/.
+36. Varoquaux, G. et al. Scikit-learn. GetMobile: Mob. Comput. Commun. 19,
+29–33 (2015).
+37. Wu, S. et al. Machine-learning-assisted discovery of polymers with high
+thermal conductivity using a molecular design algorithm. npj Comput. Mater.
+5, 66 (2019).
+38. Tao, L., Byrnes, J., Varshney, V. & Li, Y. Machine learning strategies for the
+structure-property relationship of copolymers. iScience 25, 104585 (2022).
+39. Chen, G., Tao, L. & Li, Y. Predicting polymers ’glass transition temperature by
+a chemical language processing model. Polymers 13, 1898 (2021).
+40. Tao, L., Varshney, V. & Li, Y. Benchmarking machine learning models for
+polymer informatics: an example of glass transition temperature. J. Chem. Inf.
+Model. 61, 5395 –5413 (2021).
+41. McInnes, L., Healy, J. & Melville, J. UMAP: Uniform manifold approximation
+and projection for dimension reduction, https://doi.org/10.48550/arXiv.1802.
+03426 (2018).
+42. Fritzsche, K., Lenz, R. W. & Fuller, R. C. An unusual bacterial polyester with a
+phenyl pendant group. Die Makromolekulare Chemie 191, 1957 –1965 (1990).
+43. Ishii-Hyakutake, M., Mizuno, S. & Tsuge, T. Biosynthesis and characteristics
+of aromatic polyhydroxyalkanoates. Polymers 10, 1267 (2018).
+44. Aróstegui, S. M., Aponte, M. A., Díaz, E. & Schröder, E. Bacterial polyesters
+produced by pseudomonas oleovorans containing nitrophenyl groups.
+Macromolecules 32, 2889 –2895 (1999).
+45. Meng, D.-C. & Chen, G.-Q. Synthetic biology of polyhydroxyalkanoates
+(PHA). Synthetic Biology –metab. Eng. , 147 –174, https://doi.org/10.1007/10_
+2017_3 (2017).
+46. Westlie, A. H. & Chen, E. Y.-X. Catalyzed chemical synthesis of unnatural
+aromatic polyhydroxyalkanoate and aromatic-aliphatic PHAs with record-
+high glass-transition and decomposition temperatures. Macromolecules 53,
+9906–9915 (2020).
+47. Okada, M. Chemical syntheses of biodegradable polymers. Prog. Polym. Sci.
+27,8 7 –133 (2002).
+48. Shi, C. et al. Hybrid monomer design for unifying con ﬂicting polymerizability,
+recyclability, and performance properties. Chem 7, 670 –685 (2021).
+49. Tang, X. et al. Biodegradable polyhydroxyalkanoates by stereoselective
+copolymerization of racemic diolides: stereocontrol and polyole ﬁn-like
+properties. Angewandte Chemie Int. Ed. 59, 7881 –7890 (2020).
+50. Herman, J.-J., Jérome, R., Teyssié, P., Gervais, M. & Gallot, B. Structural Study
+on styrene/ ϵ-caprolactone block copolymers in absence and in presence of a
+solvent of the polystyrene block. Die Makromolekulare Chemie 182, 997–1008
+(1981).
+51. Zalusky, A. S., Olayo-Valles, R., Wolf, J. H. & Hillmyer, M. A. Ordered
+nanoporous polymers from polystyrene-polylactide block copolymers. J. Am.
+Chem. Soc. 124, 12761 –12773 (2002).
+52. Tang, W., Murthy, N. S., Mares, F., Mcdonnell, M. E. & Curran, S. A.
+Poly(ethylene terephthalate)-poly(caprolactone) block copolymer. I. Synthesis,
+reactive extrusion, and ﬁber morphology. J. Appl. Polym. Sci. 74, 1858 –1867
+(1999).
+53. Espinoza-García, K. et al. Polymerization of ϵ-caprolactone with degraded
+PET for its functionalization. J. Polym. Res. 26, 180 (2019).
+5 4 . B e nG a r a ,M . ,K a m m o u n ,W . ,D e l a i t e ,C . ,A b i d ,S .&E lG h a r b i ,R .S y n t h e s i s
+and characterization of aliphatic-aromatic copolyesters from pet waste and
+ϵ-Caprolactone. Journal of Macromolecular Science, Part A 52, 454 –464
+(2015).
+55. Chen, L., Kern, J., Lightstone, J. P. & Ramprasad, R. Data-assisted polymer
+retrosynthesis planning. Appl. Phys. Rev. 8, 031405 (2021).
+56. Rosenboom, J.-G., Langer, R. & Traverso, G. Bioplastics for a circular
+economy. Nat. Rev. Mater. 7, 117 –137 (2022).
+57. Ghosh, K. & Jones, B. H. Roadmap to biodegradable plastics –current state and
+research needs. ACS Sustain. Chem. Eng. 9, 6170 –6187 (2021).
+58. Weininger, D. SMILES, a chemical language and information system: 1:
+Introduction to methodology and encoding rules. J. Chem. Inf. Comput. Sci.
+28,3 1 –36 (1988).
+59. Mannodi-Kanakkithodi, A., Pilania, G., Huan, T. D., Lookman, T. &
+Ramprasad, R. Machine learning strategy for accelerated design of polymer
+dielectrics. Scientiﬁc Reports 6, 20952 (2016).
+60. Doan Tran, H. et al. Machine-learning predictions of polymer properties with
+Polymer Genome. J.f Appl. Phys. 128, 171104 (2020).
+61. Huan, T. D., Mannodi-Kanakkithodi, A. & Ramprasad, R. Accelerated
+materials property predictions and design using motif-based ﬁngerprints.
+Phys. Rev. B - Condens. Matter Mater. Phys. 92,1 –10 (2015).
+62. Le, T., Epa, V. C., Burden, F. R. & Winkler, D. A. Quantitative structure-
+property relationship modeling of diverse materials properties. Chem. Rev.
+112, 2889 –2919 (2012).
+63. Landrum, G. RDKit. http://www.rdkit.org.
+64. Iler, N., Rowitch, D. H., Echelard, Y., McMahon, A. P. & Abate-Shen, C. A
+single homeodomain binding site restricts spatial expression of Wnt-1 in the
+developing brain. Mech. Dev. 53,8 7 –96 (1995).
+65. Ertl, P., Rohde, B. & Selzer, P. Fast calculation of molecular polar
+surface area as a sum of fragment-based contributions and its application
+to the prediction of drug transport properties. J. Med.Chem. 43, 3714 –3717
+(2000).
+66. Prasanna, S. & Doerksen, R. Topological polar surface area: a useful descriptor
+in 2D-QSAR. Curr. Med. Chem. 16,2 1 –41 (2008).
+67. Li, L., Jamieson, K., DeSalvo, G., Rostamizadeh, A. & Talwalkar, A.
+Hyperband: A novel bandit-based approach to hyperparameter optimization.
+J. Mach. Learn. Res. 18,1 –52 (2018).
+68. O ’Malley, T. Keras Tuner. https://github.com/keras-team/keras-tuner,
+(2019).
+69. Martin, A. et al. TensorFlow: Large-scale machine learning on heterogeneous
+systems, https://www.tensorﬂow.org/, (2015).
+Acknowledgements
+C.K. thanks the Alexander von Humboldt Foundation for ﬁnancial support. R.R.
+acknowledges support from the Of ﬁce of Naval Research through a Multi-University
+Research Initiative (MURI) grant (N00014-17-1-2656) and a regular grant (N00014-20-
+2175). G.P., B.L.M., and C.N.I. acknowledge support from the Los Alamos National
+Laboratory (LANL) Laboratory Directed Research and Development (LDRD) program ’s
+project titled Bio-Manufacturing with Intelligent Adaptive Control (BioManIAC)
+#20190001DR. J.L. gratefully acknowledges support via a LANL Center for Nonlinear
+Studies (CNLS) Summer 2021 Fellowship Award. LANL is operated by Triad National
+Security, LLC, for the National Nuclear Security Administration of U.S. Department of
+Energy (Contract No. 89233218CNA000001).
+Author contributions
+C.K. designed, trained and evaluated the machine learning models. Numerous discus-
+sions with C.N.I. and B.L.M. at an early stage helped in de ﬁning the scope of the study.
+J.L. provided input for the background information and copolymer examples. The work
+was conceived and guided by R.R and G.P. All authors discussed the results and com-
+mented on the manuscript.
+Competing interests
+Ghanshyam Pilania is a Guest Editor for Communications Materials and was not
+involved in the editorial review of, or the decision to publish, this Article. The authors
+declare no competing interests.
+Additional information
+Supplementary information The online version contains supplementary material
+available at https://doi.org/10.1038/s43246-022-00319-2.
+Correspondence and requests for materials should be addressed to Ghanshyam Pilania.
+Peer review information Communications Materials thanks the anonymous reviewers
+for their contribution to the peer review of this work. Primary Handling Editor: John
+Plummer. Peer reviewer reports are available.
+Reprints and permission information is available at http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional af ﬁliations.
+COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2 ARTICLE
+COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat 9
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons license, and indicate if changes were made. The images or other third party
+material in this article are included in the article ’s Creative Commons license, unless
+indicated otherwise in a credit line to the material. If material is not included in the
+article’s Creative Commons license and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this license, visit http://creativecommons.org/
+licenses/by/4.0/.
+© The Author(s) 2022
+ARTICLE COMMUNICATIONS MATERIALS | https://doi.org/10.1038/s43246-022-00319-2
+10 COMMUNICATIONS MATERIALS |            (2022) 3:96 | https://doi.org/10.1038/s43246-022-00319-2 | www.nature.com/commsmat

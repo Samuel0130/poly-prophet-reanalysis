@@ -1,0 +1,29 @@
+{
+  "id": "bfladderbean/fork-of-neurips-open-polymer-prediction",
+  "id_no": 96594995,
+  "title": "Fork of NeurIPS-Open Polymer Prediction",
+  "code_file": "fork-of-neurips-open-polymer-prediction.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "wliilamsam/m61-1315-0-006022-0-027956-0-029068-1-491555",
+    "wliilamsam/molfold",
+    "wliilamsam/mordred-clean",
+    "negoto/mordred-1-2-0-py3-none-any",
+    "senkin13/rdkit-2025-3-3-cp311"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "neurips-open-polymer-prediction-2025"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:320043e14c68293f1c946585b9257123385205a58af4b94b17d31868cae4e868",
+  "machine_shape": "NvidiaTeslaT4"
+}
