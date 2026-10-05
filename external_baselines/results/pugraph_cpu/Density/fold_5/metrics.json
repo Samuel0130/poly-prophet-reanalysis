@@ -1,0 +1,13 @@
+{
+  "target": "Density",
+  "fold": 5,
+  "mae": 0.058866326760785216,
+  "rmse": 0.09669216843252679,
+  "r2": 0.6448429261089741,
+  "n_train": 491,
+  "n_test": 122,
+  "selected_epochs": 80,
+  "fallback_train": 261,
+  "fallback_test": 79,
+  "runtime_seconds": 7.6809241771698
+}

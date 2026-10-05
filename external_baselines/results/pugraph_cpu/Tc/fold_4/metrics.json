@@ -1,0 +1,13 @@
+{
+  "target": "Tc",
+  "fold": 4,
+  "mae": 0.041788798411805335,
+  "rmse": 0.05554243857692749,
+  "r2": 0.6088731107577436,
+  "n_train": 693,
+  "n_test": 173,
+  "selected_epochs": 26,
+  "fallback_train": 369,
+  "fallback_test": 94,
+  "runtime_seconds": 4.1972925662994385
+}

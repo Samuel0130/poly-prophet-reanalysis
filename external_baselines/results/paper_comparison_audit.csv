@@ -1,0 +1,11 @@
+method,target,n,groups,same_rows,same_folds,same_labels,finite
+chen_rnn,Tg,557,557,True,True,True,True
+chen_rnn,FFV,7892,7874,True,True,True,True
+chen_rnn,Tc,866,866,True,True,True,True
+chen_rnn,Density,613,613,True,True,True,True
+chen_rnn,Rg,614,614,True,True,True,True
+pugraph,Tg,557,557,True,True,True,True
+pugraph,FFV,7892,7874,True,True,True,True
+pugraph,Tc,866,866,True,True,True,True
+pugraph,Density,613,613,True,True,True,True
+pugraph,Rg,614,614,True,True,True,True

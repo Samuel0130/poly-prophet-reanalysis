@@ -1,0 +1,22 @@
+{
+  "pugraph": {
+    "url": "https://github.com/yecaichao/PURS-PUFp-PUGraph",
+    "commit": "f0815d512387ea3a5fc9b6c4b07a1ecc26a0e21f",
+    "paper": "10.1021/acs.jctc.3c01385"
+  },
+  "torchgraphs": {
+    "url": "https://github.com/baldassarreFe/torchgraphs",
+    "commit": "ae42b917c0494c2201743f9c420cff466156e132"
+  },
+  "purs2": {
+    "url": "https://github.com/xinyue123-q/Python-based-polymer-unit-recognition-script-PURS-2.0",
+    "commit": "b840f05db7513c13e8da138c01b3d336056fce5f",
+    "role": "cross-check of author original source"
+  },
+  "search_exclusions": {
+    "Kuenneth2022": "author repository explicitly omits predictors",
+    "Parvez2025": "classification task; article does not provide usable code URL",
+    "TransTg": "no matching public implementation found in GitHub repository searches",
+    "Han2024": "no matching public implementation found in GitHub repository searches"
+  }
+}

@@ -1,5 +1,11 @@
 # Credentials and environments
 .venv/
+.venv-external/
+external_baselines/pugraph_upstream/
+external_baselines/purs2_upstream/
+external_baselines/cache/
+external_baselines/results/**/*.keras
+external_baselines/results/pugraph/
 **/__pycache__/
 *.pyc
 .env

@@ -46,15 +46,15 @@
       "fairness": "same folds and early-stop protocol"
     },
     "B5_chen2021_tg": {
-      "family": "external_reimplementation",
-      "status": "method_audit_required",
+      "family": "external_author_code_transfer",
+      "status": "complete_5x5",
       "paper": "Chen et al. 2021",
       "doi": "10.3390/polym13111898",
-      "scope": "paper Tg dataset; not current data unless reimplemented",
-      "architecture": "character-level polymer SMILES language model with recurrent neural network",
-      "reported_metric": "paper-specific; do not copy into current Table 3",
-      "code": "external_baselines/chen_rnn_tg (commit 6a4f61554d8a9ce42dd99468dace793f5e02afca)",
-      "verified_details": "90/10 random split, inner 80/20 validation, character-level 45-token SMILES, two bidirectional LSTM layers, MAE; PolyInfo data"
+      "scope": "author Tg method retrained on current five targets; non-Tg targets are method transfers",
+      "architecture": "published best character RNN: embedding15, BiLSTM60 x2, TimeDistributedDense30",
+      "metric": "shared grouped five-fold OOF MAE/RMSE/R2",
+      "code": "external_baselines/chen_rnn_tg at commit 6a4f61554d8a9ce42dd99468dace793f5e02afca",
+      "decision": "include as transferred author-code baseline; not exact paper-value reproduction"
     },
     "B6_kuenneth2022": {
       "family": "external_reported_only",
@@ -89,14 +89,15 @@
       "decision": "only include after obtaining same modalities and labels"
     },
     "B9_zhang2024": {
-      "family": "external_candidate",
-      "status": "task_mismatch_risk",
+      "family": "external_author_code_adaptation",
+      "status": "complete_5x5_exploratory",
       "paper": "Zhang et al. 2024",
       "doi": "10.1021/acs.jctc.3c01385",
-      "scope": "organic polymer semiconductor polymer-unit graph",
-      "architecture": "polymer-unit graph neural network",
-      "code": "not publicly located",
-      "decision": "do not assume Rg comparability"
+      "scope": "author-team PU-GN code adapted to current five targets",
+      "architecture": "SolubilityGN, three layers, hidden32, sum aggregation",
+      "metric": "shared grouped five-fold OOF MAE/RMSE/R2",
+      "code": "vendored from yecaichao/PURS-PUFp-PUGraph commit f0815d512387ea3a5fc9b6c4b07a1ecc26a0e21f",
+      "decision": "exploratory adapted comparison; 2236/8972 PURS failures use whole-repeat-unit fallback and prevent a claim of exact reproduction"
     },
     "B10_aleb2025": {
       "family": "external_candidate",

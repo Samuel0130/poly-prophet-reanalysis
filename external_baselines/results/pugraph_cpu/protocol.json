@@ -1,0 +1,21 @@
+{
+  "source_repo": "https://github.com/yecaichao/PURS-PUFp-PUGraph",
+  "source_commit": "f0815d512387ea3a5fc9b6c4b07a1ecc26a0e21f",
+  "doi": "10.1021/acs.jctc.3c01385",
+  "status": "author-code adaptation, not exact numerical paper reproduction",
+  "model": "original SolubilityGN: 3 layers hidden32 sum aggregation, config dropout enabled, Adam .001 L1 .0001 batch50",
+  "adaptations": [
+    "PURS per molecule to avoid test-dependent unit index vocabulary",
+    "two DataFrame chained writes replaced with loc for pandas3",
+    "torch_scatter sum replaced with native torch index_add",
+    "failed unit decomposition: one whole-repeat-unit MACCS167 node, zero edges",
+    "fold-local target scaling, shared grouped folds, training-only early stop patience15, full outer refit"
+  ],
+  "fallback_count": 2236,
+  "n": 8972,
+  "epochs_max": 80,
+  "device": "cpu",
+  "threads": 1,
+  "dataset_sha256": "89cb1eafa340a9de737c37878ad9d64235522d61274beb120adfe361d7412f5d",
+  "outer_folds_sha256": "51eaf12cb90dc7a184e40a0d3ce4b5fe3aeb8061282cde98a413aafd8795f5fe"
+}

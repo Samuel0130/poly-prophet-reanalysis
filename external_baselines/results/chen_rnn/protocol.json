@@ -1,0 +1,24 @@
+{
+  "source_repo": "https://github.com/figotj/RNN-Tg",
+  "source_commit": "6a4f61554d8a9ce42dd99468dace793f5e02afca",
+  "source_sha256": "81346e4a973c4830931f7d45115e1172942342a50159d03bc2ea2b60b7b60da5",
+  "factory": "original getRNNmodel via AST",
+  "architecture": "length120 embedding15 BiLSTM60 x2 TimeDistributedDense30 flatten Dense1",
+  "adaptations": [
+    "training-only char vocabulary PAD=0 UNK=1, post-truncate/post-pad length120",
+    "fold-local target standardization",
+    "shared grouped outer5 and inner training-only split",
+    "published optimal architecture fixed, inner MSE early stopping patience10; refit outer train selected epochs",
+    "FFV Tc Density Rg are regression transfers of original Tg method"
+  ],
+  "epochs_max": 500,
+  "batch_size": 128,
+  "optimizer": "Adam lr=.001 epsilon=1e-7",
+  "keras": "3.15.1",
+  "backend": "torch",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "dataset_sha256": "89cb1eafa340a9de737c37878ad9d64235522d61274beb120adfe361d7412f5d",
+  "outer_folds_sha256": "51eaf12cb90dc7a184e40a0d3ce4b5fe3aeb8061282cde98a413aafd8795f5fe",
+  "truncated_count": 481
+}

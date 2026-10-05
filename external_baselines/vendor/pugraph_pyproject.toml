@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "purs-pufp-pugraph"
+version = "0.1.0"
+description = "Unified toolkit for polymer-unit recognition, polymer-unit fingerprints, and polymer-unit graph learning."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+  "polymer",
+  "smiles",
+  "fingerprint",
+  "graph-learning",
+  "materials-informatics",
+]
+authors = [
+  { name = "PURS-PUFp-PUGraph Team" }
+]
+license = "MIT"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Chemistry",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+core = [
+  "rdkit",
+]
+ml = [
+  "scikit-learn>=1.1",
+  "matplotlib>=3.7",
+]
+graph = [
+  "torch>=2.0",
+  "pyyaml>=6.0",
+  "pyaml",
+  "tensorboardX",
+  "sparse",
+  "torchgraphs",
+]
+viz = [
+  "pillow>=10.0",
+  "cairosvg>=2.7",
+]
+all = [
+  "rdkit",
+  "scikit-learn>=1.1",
+  "matplotlib>=3.7",
+  "torch>=2.0",
+  "pyyaml>=6.0",
+  "pyaml",
+  "tensorboardX",
+  "sparse",
+  "torchgraphs",
+  "pillow>=10.0",
+  "cairosvg>=2.7",
+]
+
+[project.scripts]
+purs = "purs.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

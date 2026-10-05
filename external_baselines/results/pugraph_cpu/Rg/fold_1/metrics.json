@@ -1,0 +1,13 @@
+{
+  "target": "Rg",
+  "fold": 1,
+  "mae": 2.213355561700013,
+  "rmse": 3.473357225484636,
+  "r2": 0.4962643325224355,
+  "n_train": 491,
+  "n_test": 123,
+  "selected_epochs": 71,
+  "fallback_train": 267,
+  "fallback_test": 76,
+  "runtime_seconds": 6.540370464324951
+}

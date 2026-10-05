@@ -1,0 +1,13 @@
+{
+  "target": "Tg",
+  "fold": 4,
+  "mae": 64.18347613108857,
+  "rmse": 81.87904862530795,
+  "r2": 0.4724007142703366,
+  "n_train": 445,
+  "n_test": 112,
+  "selected_epochs": 32,
+  "fallback_train": 163,
+  "fallback_test": 39,
+  "runtime_seconds": 3.4493284225463867
+}

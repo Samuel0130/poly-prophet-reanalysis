@@ -1,0 +1,13 @@
+{
+  "target": "FFV",
+  "fold": 1,
+  "mae": 0.012180788453011217,
+  "rmse": 0.01778092756015737,
+  "r2": 0.6448700418311157,
+  "n_train": 6314,
+  "n_test": 1578,
+  "selected_epochs": 76,
+  "fallback_train": 1361,
+  "fallback_test": 368,
+  "runtime_seconds": 95.06940817832947
+}
