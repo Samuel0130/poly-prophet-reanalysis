@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; fill: #666; }
+      .box-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .box-text { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+      .dim-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #0066cc; }
+      .stage-num { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+    </style>
+    
+    <linearGradient id="grad-cnn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#90caf9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad-lstm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ce93d8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad-molformer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb74d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad-desc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad-fusion" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f48fb1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" class="title">Poly-Prophet Architecture</text>
+  <text x="600" y="65" text-anchor="middle" class="subtitle">Four-branch multi-modal framework for polymer property prediction</text>
+  
+  <!-- Input SMILES -->
+  <rect x="475" y="90" width="250" height="50" rx="8" fill="#eceff1" stroke="#455a64" stroke-width="2"/>
+  <text x="600" y="115" text-anchor="middle" class="box-title">Input: SMILES String</text>
+  <text x="600" y="132" text-anchor="middle" class="box-text">*CC(C)(C(=O)O)*</text>
+  
+  <!-- Arrow down -->
+  <path d="M 600 140 L 600 170" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Tokenization & Embedding -->
+  <rect x="450" y="170" width="300" height="60" rx="8" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+  <circle cx="475" cy="195" r="15" fill="#0277bd"/>
+  <text x="475" y="200" text-anchor="middle" class="stage-num">1</text>
+  <text x="510" y="195" class="box-title">Tokenization &amp; Embedding</text>
+  <text x="510" y="215" class="box-text" style="font-size:9.5px">45-char vocab, max length 120 → 256-d embeddings</text>
+  
+  <text x="612" y="256" text-anchor="start" class="box-text" font-weight="bold">Four Parallel Branches</text>
+  <path d="M 600 230 L 600 270" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Four branches -->
+  <!-- Branch A: CNN -->
+  <rect x="50" y="290" width="250" height="180" rx="8" fill="url(#grad-cnn)" stroke="#1976d2" stroke-width="2"/>
+  <circle cx="75" cy="310" r="15" fill="#1976d2"/>
+  <text x="75" y="315" text-anchor="middle" class="stage-num">A</text>
+  <text x="110" y="315" class="box-title">CNN Branch</text>
+  <text x="60" y="340" class="box-text">• 6 parallel conv layers</text>
+  <text x="60" y="360" class="box-text">• Kernels: 3, 5, 7, 15</text>
+  <text x="60" y="380" class="box-text">• Dilations: 1, 2</text>
+  <text x="60" y="400" class="box-text">• Global max &amp; avg pooling</text>
+  <text x="60" y="420" class="box-text">• Multi-scale local patterns</text>
+  <text x="175" y="455" text-anchor="middle" class="dim-text">→ 704 dimensions</text>
+  
+  <!-- Branch B: BiLSTM -->
+  <rect x="320" y="290" width="250" height="180" rx="8" fill="url(#grad-lstm)" stroke="#7b1fa2" stroke-width="2"/>
+  <circle cx="345" cy="310" r="15" fill="#7b1fa2"/>
+  <text x="345" y="315" text-anchor="middle" class="stage-num">B</text>
+  <text x="380" y="315" class="box-title">BiLSTM + Attention</text>
+  <text x="330" y="340" class="box-text">• 2-layer bidirectional LSTM</text>
+  <text x="330" y="360" class="box-text">• Hidden: 128 × 2 directions</text>
+  <text x="330" y="380" class="box-text">• Additive self-attention</text>
+  <text x="330" y="400" class="box-text">• Padding mask</text>
+  <text x="330" y="420" class="box-text">• Long-range dependencies</text>
+  <text x="445" y="455" text-anchor="middle" class="dim-text">→ 256 dimensions</text>
+  
+  <!-- Branch C: MolFormer -->
+  <rect x="590" y="290" width="250" height="180" rx="8" fill="url(#grad-molformer)" stroke="#f57c00" stroke-width="2"/>
+  <circle cx="615" cy="310" r="15" fill="#f57c00"/>
+  <text x="615" y="315" text-anchor="middle" class="stage-num">C</text>
+  <text x="650" y="315" class="box-title">MolFormer Embeddings</text>
+  <text x="600" y="340" class="box-text">• Frozen MolFormer-XL</text>
+  <text x="600" y="360" class="box-text">• Pretrained on 10% ZINC + 10% PubChem</text>
+  <text x="600" y="380" class="box-text">• Pooled representation: first 64 dimensions</text>
+  <text x="600" y="400" class="box-text">• Dense(64 → 32)</text>
+  <text x="600" y="420" class="box-text">• Frozen transfer learning</text>
+  <text x="715" y="455" text-anchor="middle" class="dim-text">→ 32 dimensions</text>
+  
+  <!-- Branch D: Descriptors -->
+  <rect x="860" y="290" width="250" height="180" rx="8" fill="url(#grad-desc)" stroke="#388e3c" stroke-width="2"/>
+  <circle cx="885" cy="310" r="15" fill="#388e3c"/>
+  <text x="885" y="315" text-anchor="middle" class="stage-num">D</text>
+  <text x="920" y="315" class="box-title">Structural Descriptors</text>
+  <text x="870" y="340" class="box-text">• Backbone vs side-chain</text>
+  <text x="870" y="360" class="box-text">• Wildcard atom parsing</text>
+  <text x="870" y="380" class="box-text">• RDKit features (6 effective)</text>
+  <text x="870" y="400" class="box-text">• Dense(17 → 64)</text>
+  <text x="870" y="420" class="box-text">• Domain knowledge</text>
+  <text x="985" y="455" text-anchor="middle" class="dim-text">→ 64 dimensions</text>
+  
+  <!-- Arrows converging -->
+  <path d="M 175 470 L 175 520 L 550 520" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 445 470 L 445 520 L 550 520" fill="none" stroke="#666" stroke-width="2"/>
+  <path d="M 715 470 L 715 520 L 650 520" fill="none" stroke="#666" stroke-width="2"/>
+  <path d="M 985 470 L 985 520 L 650 520" fill="none" stroke="#666" stroke-width="2"/>
+  
+  <!-- Fusion -->
+  <rect x="400" y="540" width="400" height="100" rx="8" fill="url(#grad-fusion)" stroke="#c2185b" stroke-width="2"/>
+  <circle cx="425" cy="565" r="15" fill="#c2185b"/>
+  <text x="425" y="570" text-anchor="middle" class="stage-num">2</text>
+  <text x="460" y="570" class="box-title">Multi-Modal Fusion</text>
+  <text x="410" y="595" class="box-text">Concatenate: 704 + 256 + 32 + 64</text>
+  <rect x="450" y="610" width="300" height="22" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="600" y="625" text-anchor="middle" class="dim-text" fill="#f57f17">1056-dimensional fused representation</text>
+  
+  <!-- Arrow down -->
+  <path d="M 600 640 L 600 670" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- MLP Head -->
+  <rect x="450" y="670" width="300" height="80" rx="8" fill="#ede7f6" stroke="#512da8" stroke-width="2"/>
+  <circle cx="475" cy="695" r="15" fill="#512da8"/>
+  <text x="475" y="700" text-anchor="middle" class="stage-num">3</text>
+  <text x="510" y="700" class="box-title">MLP Prediction Head</text>
+  <text x="460" y="720" class="box-text">Dense(512) → Dense(256) → Dense(128) → Dense(1)</text>
+  <text x="460" y="738" class="box-text">Layer norm + ReLU + Dropout at each layer</text>
+  
+  <!-- Arrow down -->
+  <path d="M 600 750 L 600 770" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output -->
+  <rect x="500" y="770" width="200" height="22" rx="4" fill="#66bb6a" stroke="#2e7d32" stroke-width="2"/>
+  <text x="600" y="785" text-anchor="middle" class="box-title" fill="white">Predicted Property</text>
+</svg>

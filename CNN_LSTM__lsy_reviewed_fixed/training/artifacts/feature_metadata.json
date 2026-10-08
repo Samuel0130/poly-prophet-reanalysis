@@ -1,0 +1,12 @@
+{
+  "feature_definition": "original inference: (CLS + mean(hidden[1:]))/2, first 64 channels",
+  "frozen_pretrained_model": true,
+  "max_molformer_tokens": 256,
+  "padding": "max_length",
+  "deterministic_eval": true,
+  "augmentation": "3 RDKit atom permutations per structure; p=0.3 only in training",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.44.2",
+  "feature_fallback_allowed": false,
+  "cv_grouping": "canonical non-isomeric SMILES; does not resolve all repeat-unit equivalences"
+}

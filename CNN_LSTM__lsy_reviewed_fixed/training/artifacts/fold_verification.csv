@@ -1,0 +1,6 @@
+target,n_labels,cv_groups,checks
+Tg,557,557,"outer and inner rows/groups disjoint, exactly one OOF prediction slot per label"
+FFV,7892,7874,"outer and inner rows/groups disjoint, exactly one OOF prediction slot per label"
+Tc,866,866,"outer and inner rows/groups disjoint, exactly one OOF prediction slot per label"
+Density,613,613,"outer and inner rows/groups disjoint, exactly one OOF prediction slot per label"
+Rg,614,614,"outer and inner rows/groups disjoint, exactly one OOF prediction slot per label"

@@ -1,0 +1,12 @@
+paper,doi,property,reported_value,unit,metric,reported_dataset_or_protocol,comparability,status
+Original Poly-Prophet,local, Tg,4.02,K,MAE,original Table 2; protocol not recoverable,not directly comparable,reported-only
+Original Poly-Prophet,local, Tc,0.0034,W/(m·K),MAE,original Table 2; protocol not recoverable,not directly comparable,reported-only
+Original Poly-Prophet,local, FFV,0.0022,dimensionless,MAE,original Table 2; protocol not recoverable,not directly comparable,reported-only
+Original Poly-Prophet,local, Density,0.0041,g/cm3,MAE,original Table 2; protocol not recoverable,not directly comparable,reported-only
+Original Poly-Prophet,local, Rg,0.225,Å,MAE,original Table 2; protocol not recoverable,not directly comparable,reported-only
+Aleb et al. 2025,10.1007/s00521-024-10532-4,Tg,31.20,K,MAE,TransTg paper dataset/protocol,not directly comparable,reported-only until reimplemented
+Chen et al. 2021,10.3390/polym13111898,Tg,,°C,MAE,PolyInfo; 90/10 random split,not directly comparable,code recovered; method candidate
+Han et al. 2024,10.1021/acsami.4c01207,Tg,,,paper metric,Multimodal Transformer dataset/protocol,not directly comparable,source/input audit required
+Zhang et al. 2024,10.1021/acs.jctc.3c01385,Rg,,,paper metric,polymer semiconductor polymer-unit graph dataset,not directly comparable,task audit required
+Kuenneth et al. 2022,10.1038/s43246-022-00319-2,Tg,,,RMSE/R2,PoLyInfo; 22731 homo/copolymer records,not directly comparable,predictor code unavailable
+Parvez & Mehedi 2025,10.3390/polym17131801,multiple,,,accuracy/F1,6265-record classification dataset,not a regression baseline,exclude from Table 3

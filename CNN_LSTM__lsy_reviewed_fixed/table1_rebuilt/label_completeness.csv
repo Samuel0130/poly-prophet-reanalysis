@@ -1,0 +1,17 @@
+available_targets,unique_polymers
+FFV,7505
+Tg,519
+Tc;Density;Rg,292
+FFV;Tc;Density;Rg,221
+Tc,201
+FFV;Tc,116
+FFV;Density;Rg,47
+Density;Rg,26
+Tg;Tc;Density;Rg,18
+Tg;Tc,14
+Tg;Density;Rg,5
+Tc;Rg,3
+Density,2
+FFV;Density,1
+Tg;FFV;Density;Rg,1
+FFV;Tc;Rg,1

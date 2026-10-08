@@ -1,0 +1,3 @@
+source_a,source_b,property,canonical_SMILES,polymer_group_id,value_a,value_b,absolute_difference,numerical_disagreement,resolution
+train,dataset1,Tc,*/C=C/CC*,e3caab2e6ca57571a58cdc96b6f099af662d9d33a009b53a88fc9922932a4bf5,0.2486666666666666,0.2548888888888889,0.006222222222222296,True,retain train label
+train,dataset1,Tc,*CC/C=C(/*)C,f9bd98f327ab9600dd08b4a5b053aef36dee9909b0f18b8e3a10d45c4aabac8f,0.256,0.24966666666666668,0.00633333333333333,True,retain train label
