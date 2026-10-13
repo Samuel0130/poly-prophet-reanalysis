@@ -1,37 +1,25 @@
-# Credentials and environments
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Environments
 .venv/
-.venv-external/
-external_baselines/pugraph_upstream/
-external_baselines/purs2_upstream/
-external_baselines/cache/
-external_baselines/results/**/*.keras
-external_baselines/results/pugraph/
-**/__pycache__/
-*.pyc
+venv/
+env/
+
+# Secrets and local configuration
 .env
-.kaggle/
+.env.*
+!.env.example
 
-# Downloaded Kaggle data and model/input caches (recreate with scripts)
-kaggle_inputs/
-kaggle_source/original_training/
-kaggle_source/original_infer/
-training/artifacts/tokens.npy
-training/artifacts/molformer.npy
-training/artifacts/morgan_2048_uint8.npy
-training/artifacts/augmentation_bank.json
-training/results/**/fold_*/model.pt
-training/results/**/fold_*/select_latest.pt
-training/results/**/fold_*/refit_latest.pt
-training/results/**/fold_*/select_best.pt
-training/results/**/*.pt
-training/*.log
-training/results/*.log
-external_baselines/*.log
-external_baselines/bioplastic_design/
-external_baselines/chen_rnn_tg/.git/
-
-# Temporary/build files
-*.tmp
-*.part
-*.zip
+# OS/editor files
 .DS_Store
+.vscode/
+.idea/
+
+# Local outputs and data
+*.log
+outputs/
+results/
+figures/
+data/raw/
