@@ -1,44 +1,33 @@
-﻿# Poly Prophet Reanalysis
+﻿# Poly-Prophet: audited re-analysis and external baselines
 
-Code and supporting materials for the manuscript **[insert manuscript title]**.
+This repository contains the reproducible re-analysis of the Poly-Prophet polymer-property prediction manuscript.
 
-## Repository status
+The work is organized around the reviewer-requested tables:
 
-This repository contains the computational code used for the analyses reported in the manuscript. The exact version used for publication will be archived in Zenodo and cited by its DOI.
+- `table1_rebuilt/`: audited dataset composition, canonical-structure provenance, missingness, ranges, means and sample SD.
+- `training/results/`: newly trained grouped five-fold OOF results and the seven-variant ablation (`Table4_ablation.docx`, `retraining_results.xlsx`).
+- `external_baselines/`: baseline registry, literature comparability audit, and fair same-data Morgan/mean baselines (`results/Table3_fair_baselines.md`).
+- `training/artifacts/`: lightweight dataset, folds and verification metadata. Large model/input caches are deliberately ignored and can be regenerated.
+- `cnnlstm-bamod4c-molfold-aug-infer.ipynb`: user-specified original inference notebook.
 
-## Reproducibility
+## Reproduce
 
-The repository will include:
+Use Python 3.12 and install `training/requirements.txt` in an isolated environment. Kaggle inputs are downloaded with `download_kaggle_inputs.py`; credentials are read by the official Kaggle client and are never committed.
 
-- scripts for data processing, analysis, and figure generation;
-- a description of the input data and how to obtain it;
-- the software environment and dependency versions;
-- instructions for reproducing the main results.
-
-### Requirements
-
-The computational environment and pinned dependencies should be documented in `requirements.txt` or `environment.yml` once the analysis code is added. Do not commit credentials, API keys, or restricted/private data.
-
-### Running the analysis
-
-Add the project-specific commands here, for example:
-
-```text
-# install dependencies
-# run preprocessing
-# run analyses
-# generate figures
+```bash
+.venv/bin/python download_kaggle_inputs.py
+.venv/bin/python rebuild_table1.py
+.venv/bin/python training/prepare.py
+.venv/bin/python training/launch_experiment.py
+.venv/bin/python external_baselines/run_classical.py
+.venv/bin/python external_baselines/make_report.py
 ```
 
-## Data availability
+The primary results are a re-analysis under a documented grouped five-fold protocol, not a claim of exact numerical reproduction of the original manuscript. External literature values are kept separate when datasets, targets, units or metrics differ.
 
-Add the data source, access instructions, and any restrictions here. Large or restricted datasets should not be committed to this repository.
+## Code availability
 
-## Citation and code availability
-
-The archived release corresponding to the manuscript will be deposited in Zenodo and cited with its DOI. The GitHub repository is the development repository:
-
-https://github.com/Samuel0130/poly-prophet-reanalysis
+The source code is maintained at https://github.com/Samuel0130/poly-prophet-reanalysis. The release corresponding to the manuscript will be archived in Zenodo and cited with its DOI.
 
 ## License
 
